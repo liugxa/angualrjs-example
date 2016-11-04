@@ -1,0 +1,7 @@
+<div ng-controller="ngTableSearchTable">
+	<x1-searchbar input="inputData" output="outputData" options="options2"></x1-searchbar>
+
+	<x1-grid id="{{idMap.id1}}" data="gridData" options="gridOptions" resize-events="gridEvents"></x1-grid>
+	<p><em>Cell click events:</em> {{demoEvents.demoClickEvent}}</p>
+	<p><em>Column sort events:</em> {{demoEvents.demoSortEvent}}</p>
+</div>

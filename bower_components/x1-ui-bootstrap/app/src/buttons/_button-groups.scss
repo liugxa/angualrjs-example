@@ -1,0 +1,144 @@
+//
+// Button groups
+// --------------------------------------------------
+
+// Make the div behave like a button
+.btn-group {
+	> .btn-group:not(:first-child) > .btn,
+	> .btn:not(:first-child) {
+		border-left-width: 1px;
+	}
+}
+.btn-group-justified {
+	> .btn-group:not(:first-child) > .btn {
+		border-left-width: 0;
+	}
+}
+
+// Sizing
+// ----------------------
+// inherits from `x1-ui-bootstrap/app/src/bootstrap/_button-groups.scss`
+// .btn-group-[size] > .btn { @extend .btn-[size]; }
+
+
+// Single & Split button dropdowns
+// ----------------------
+
+.btn-group[dropdown] > .btn {
+	border-width: 1px;
+	padding: 0 10px;
+
+	// Default button(s)
+	&.btn-default {
+		border-color: $dropdown-default-color;
+		background-color: $dropdown-default-bg;
+		color: $gray60;
+
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active  {
+			background-color: $dropdown-hover-bg;
+		}
+		&[dropdown-toggle] {
+			// Chevron arrow
+			&:after {
+				color: $icon;
+			}
+		}
+	}
+	// Primary/secondary button(s)
+	&.btn-secondary {
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active  {
+			border-color: $dropdown-primary-color;
+			background-color: $dropdown-hover-bg;
+			color: $dropdown-primary-color;
+		}
+	}
+
+	&[dropdown-toggle] {
+		// Chevron arrow
+		&:after {
+			@extend %glyphicon;
+			@extend %glyphicon-xs;
+			@extend .pull-right;
+			content: $glyphicon-chevron-down;
+			padding-left: 20px;
+		}
+	}
+
+	// Split button
+	+ .dropdown-toggle {
+		padding-left: 10px;
+		padding-right: 10px;
+
+		// Chevron arrow
+		&:after {
+			padding: 0;
+		}
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $dropdown-disabled-bg;
+			border-color: $dropdown-disabled-color;
+			color: $dropdown-disabled-color;
+		}
+		&[dropdown-toggle] {
+			// Chevron arrow
+			&:after {
+				color: $dropdown-disabled-color;
+			}
+		}
+	}
+}
+
+// The clickable button for toggling the menu
+// Remove the gradient and inset shadow
+// Flip the chevron arrow
+.btn-group[dropdown] .btn[dropdown-toggle]:active,
+.btn-group[dropdown].open .btn[dropdown-toggle] {
+	@include box-shadow(none);
+
+	// Chevron arrow
+	&:after {
+		content: $glyphicon-chevron-up;
+	}
+}
+
+//.btn.dropdown-toggle {
+//	z-index: $zindex-dropdown + 1;
+//}
+
+// Vertical button groups
+// ----------------------
+
+.btn-group-vertical > .btn {
+	&:not(:first-child):not(:last-child) {
+		border-radius: 0;
+	}
+	&:first-child:not(:last-child) {
+		border-radius: 0;
+	}
+	&:last-child:not(:first-child) {
+		border-radius: 0;
+	}
+}
+.btn-group-vertical {
+	> .btn-group:not(:first-child) > .btn,
+	> .btn:not(:first-child) {
+		border-left-width: $btn-border-width;
+	}
+}

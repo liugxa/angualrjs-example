@@ -1,0 +1,1588 @@
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.rtl.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+[dir="rtl"] .x1-calendar-core .start-date {
+  background: #4178BE;
+  color: #FFFFFF; }
+  [dir="rtl"] .x1-calendar-core .start-date .div-day {
+    position: relative; }
+    [dir="rtl"] .x1-calendar-core .start-date .div-day:before {
+      right: inherit;
+      left: -10px !important; }
+    [dir="rtl"] .x1-calendar-core .start-date .div-day:after {
+      right: inherit;
+      left: -10px !important; }
+
+[dir="rtl"] .x1-calendar-core .end-date {
+  background: #4178BE;
+  color: #FFFFFF; }
+  [dir="rtl"] .x1-calendar-core .end-date .div-day {
+    position: relative; }
+
+[dir="rtl"] .x1-calendar-core .end-date.start-date:before {
+  display: none; }
+
+[dir="rtl"] .x1-calendar-core .end-date.start-date:after {
+  display: none; }
+
+[dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected,
+[dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week {
+  background: #eef4fe;
+  color: #000000; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.max-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:last-of-type,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.max-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:last-of-type {
+    background: #4178BE; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.max-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:last-of-type .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.max-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:last-of-type .div-day {
+      color: #FFFFFF;
+      border: 1px double #4178BE;
+      position: relative; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.min-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:first-of-type,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:first-of-type {
+    background: #4178BE; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.min-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:first-of-type .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:first-of-type .div-day {
+      color: #FFFFFF;
+      border: 1px double #4178BE;
+      position: relative; }
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.min-day .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:first-of-type .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:first-of-type .div-day:after {
+        right: inherit;
+        left: -10px !important; }
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td.min-day .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td:first-of-type .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td:first-of-type .div-day:before {
+        right: inherit;
+        left: -11px !important; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td {
+    border: 1px solid #eef4fe; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.selected td .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td .div-day {
+      border: 1px double #eef4fe;
+      position: relative; }
+
+[dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered,
+[dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week {
+  background: #eef4fe; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td {
+    border: 1px double #eef4fe; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td .div-day {
+      border: 1px double #eef4fe;
+      position: relative; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.max-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-end,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.max-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-end {
+    background: #FFFFFF; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.max-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-end .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.max-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-end .div-day {
+      color: #000000;
+      position: relative; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.min-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-start,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-start {
+    background: #FFFFFF; }
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.min-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-start .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day,
+    [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-start .div-day {
+      color: #000000;
+      position: relative; }
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.min-day .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-start .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day:after,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-start .div-day:after {
+        right: inherit;
+        left: -10px !important; }
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.min-day .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td.fiscal-week-start .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.min-day .div-day:before,
+      [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td.fiscal-week-start .div-day:before {
+        right: inherit;
+        left: -11px !important; }
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week.hovered td,
+  [dir="rtl"] .x1-calendar-core .x1-calendar-week .tr-week .fiscal-week td {
+    border: 1px solid #eef4fe; }
+
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-calendar-core-year,
+.x1-calendar-core-quarter,
+.x1-calendar-core-month,
+.x1-calendar-core-week,
+.x1-calendar-core-day,
+.x1-calendar-core-any {
+  color: #5A5A5A; }
+  .x1-calendar-core-year .table,
+  .x1-calendar-core-quarter .table,
+  .x1-calendar-core-month .table,
+  .x1-calendar-core-week .table,
+  .x1-calendar-core-day .table,
+  .x1-calendar-core-any .table {
+    border: none; }
+    .x1-calendar-core-year .table .table-headers,
+    .x1-calendar-core-quarter .table .table-headers,
+    .x1-calendar-core-month .table .table-headers,
+    .x1-calendar-core-week .table .table-headers,
+    .x1-calendar-core-day .table .table-headers,
+    .x1-calendar-core-any .table .table-headers {
+      background-color: transparent;
+      padding-bottom: 10px !important;
+      color: #5596E6;
+      font-weight: 700;
+      border: none; }
+    .x1-calendar-core-year .table > thead > tr > th,
+    .x1-calendar-core-quarter .table > thead > tr > th,
+    .x1-calendar-core-month .table > thead > tr > th,
+    .x1-calendar-core-week .table > thead > tr > th,
+    .x1-calendar-core-day .table > thead > tr > th,
+    .x1-calendar-core-any .table > thead > tr > th {
+      padding-left: 10px;
+      padding-right: 10px; }
+    .x1-calendar-core-year .table tr,
+    .x1-calendar-core-quarter .table tr,
+    .x1-calendar-core-month .table tr,
+    .x1-calendar-core-week .table tr,
+    .x1-calendar-core-day .table tr,
+    .x1-calendar-core-any .table tr {
+      border-top: 4px solid #FFFFFF; }
+      .x1-calendar-core-year .table tr:last-of-type,
+      .x1-calendar-core-quarter .table tr:last-of-type,
+      .x1-calendar-core-month .table tr:last-of-type,
+      .x1-calendar-core-week .table tr:last-of-type,
+      .x1-calendar-core-day .table tr:last-of-type,
+      .x1-calendar-core-any .table tr:last-of-type {
+        border-bottom: 4px solid #FFFFFF; }
+  .x1-calendar-core-year .year-header,
+  .x1-calendar-core-quarter .year-header,
+  .x1-calendar-core-month .year-header,
+  .x1-calendar-core-week .year-header,
+  .x1-calendar-core-day .year-header,
+  .x1-calendar-core-any .year-header {
+    margin-bottom: 15px; }
+    .x1-calendar-core-year .year-header.single-year,
+    .x1-calendar-core-quarter .year-header.single-year,
+    .x1-calendar-core-month .year-header.single-year,
+    .x1-calendar-core-week .year-header.single-year,
+    .x1-calendar-core-day .year-header.single-year,
+    .x1-calendar-core-any .year-header.single-year {
+      margin-right: 290px;
+      margin-top: 30px; }
+    .x1-calendar-core-year .year-header .year-control,
+    .x1-calendar-core-quarter .year-header .year-control,
+    .x1-calendar-core-month .year-header .year-control,
+    .x1-calendar-core-week .year-header .year-control,
+    .x1-calendar-core-day .year-header .year-control,
+    .x1-calendar-core-any .year-header .year-control {
+      display: inline-block;
+      position: relative;
+      margin: 0 auto; }
+      .x1-calendar-core-year .year-header .year-control .calendar-controls,
+      .x1-calendar-core-quarter .year-header .year-control .calendar-controls,
+      .x1-calendar-core-month .year-header .year-control .calendar-controls,
+      .x1-calendar-core-week .year-header .year-control .calendar-controls,
+      .x1-calendar-core-day .year-header .year-control .calendar-controls,
+      .x1-calendar-core-any .year-header .year-control .calendar-controls {
+        position: absolute;
+        top: 3px; }
+        .x1-calendar-core-year .year-header .year-control .calendar-controls.prev-year,
+        .x1-calendar-core-quarter .year-header .year-control .calendar-controls.prev-year,
+        .x1-calendar-core-month .year-header .year-control .calendar-controls.prev-year,
+        .x1-calendar-core-week .year-header .year-control .calendar-controls.prev-year,
+        .x1-calendar-core-day .year-header .year-control .calendar-controls.prev-year,
+        .x1-calendar-core-any .year-header .year-control .calendar-controls.prev-year {
+          left: -30px; }
+        .x1-calendar-core-year .year-header .year-control .calendar-controls.next-year,
+        .x1-calendar-core-quarter .year-header .year-control .calendar-controls.next-year,
+        .x1-calendar-core-month .year-header .year-control .calendar-controls.next-year,
+        .x1-calendar-core-week .year-header .year-control .calendar-controls.next-year,
+        .x1-calendar-core-day .year-header .year-control .calendar-controls.next-year,
+        .x1-calendar-core-any .year-header .year-control .calendar-controls.next-year {
+          right: -30px; }
+      .x1-calendar-core-year .year-header .year-control .year-label,
+      .x1-calendar-core-quarter .year-header .year-control .year-label,
+      .x1-calendar-core-month .year-header .year-control .year-label,
+      .x1-calendar-core-week .year-header .year-control .year-label,
+      .x1-calendar-core-day .year-header .year-control .year-label,
+      .x1-calendar-core-any .year-header .year-control .year-label {
+        display: inline-block;
+        color: #5A5A5A;
+        margin: 0; }
+  .x1-calendar-core-year .month-label,
+  .x1-calendar-core-quarter .month-label,
+  .x1-calendar-core-month .month-label,
+  .x1-calendar-core-week .month-label,
+  .x1-calendar-core-day .month-label,
+  .x1-calendar-core-any .month-label {
+    display: inline-block;
+    margin: 0;
+    color: #5A5A5A;
+    font-weight: 400; }
+  .x1-calendar-core-year .calendar-controls,
+  .x1-calendar-core-quarter .calendar-controls,
+  .x1-calendar-core-month .calendar-controls,
+  .x1-calendar-core-week .calendar-controls,
+  .x1-calendar-core-day .calendar-controls,
+  .x1-calendar-core-any .calendar-controls {
+    background-color: transparent;
+    border: none; }
+  .x1-calendar-core-year .div-day,
+  .x1-calendar-core-quarter .div-day,
+  .x1-calendar-core-month .div-day,
+  .x1-calendar-core-week .div-day,
+  .x1-calendar-core-day .div-day,
+  .x1-calendar-core-any .div-day {
+    border: 1px double #FFFFFF;
+    position: relative;
+    padding: 8px; }
+    .x1-calendar-core-year .div-day .calendar-date,
+    .x1-calendar-core-quarter .div-day .calendar-date,
+    .x1-calendar-core-month .div-day .calendar-date,
+    .x1-calendar-core-week .div-day .calendar-date,
+    .x1-calendar-core-day .div-day .calendar-date,
+    .x1-calendar-core-any .div-day .calendar-date {
+      text-decoration: none;
+      position: relative;
+      margin: 0;
+      z-index: 999;
+      color: #5A5A5A; }
+  .x1-calendar-core-year .today .div-day,
+  .x1-calendar-core-quarter .today .div-day,
+  .x1-calendar-core-month .today .div-day,
+  .x1-calendar-core-week .today .div-day,
+  .x1-calendar-core-day .today .div-day,
+  .x1-calendar-core-any .today .div-day {
+    text-decoration: underline;
+    font-weight: bold; }
+  .x1-calendar-core-year .otherday,
+  .x1-calendar-core-quarter .otherday,
+  .x1-calendar-core-month .otherday,
+  .x1-calendar-core-week .otherday,
+  .x1-calendar-core-day .otherday,
+  .x1-calendar-core-any .otherday {
+    background-color: #FFFFFF !important;
+    border-color: #FFFFFF !important;
+    color: #FFFFFF !important;
+    pointer-events: none; }
+    .x1-calendar-core-year .otherday .div-day,
+    .x1-calendar-core-quarter .otherday .div-day,
+    .x1-calendar-core-month .otherday .div-day,
+    .x1-calendar-core-week .otherday .div-day,
+    .x1-calendar-core-day .otherday .div-day,
+    .x1-calendar-core-any .otherday .div-day {
+      visibility: hidden; }
+  .x1-calendar-core-year .month-header,
+  .x1-calendar-core-quarter .month-header,
+  .x1-calendar-core-month .month-header,
+  .x1-calendar-core-week .month-header,
+  .x1-calendar-core-day .month-header,
+  .x1-calendar-core-any .month-header {
+    font-size: 1.9rem;
+    color: #5A5A5A;
+    position: relative;
+    margin-bottom: 15px; }
+    .x1-calendar-core-year .month-header button.prev,
+    .x1-calendar-core-quarter .month-header button.prev,
+    .x1-calendar-core-month .month-header button.prev,
+    .x1-calendar-core-week .month-header button.prev,
+    .x1-calendar-core-day .month-header button.prev,
+    .x1-calendar-core-any .month-header button.prev {
+      position: absolute;
+      z-index: 99;
+      left: 15px; }
+    .x1-calendar-core-year .month-header button.next,
+    .x1-calendar-core-quarter .month-header button.next,
+    .x1-calendar-core-month .month-header button.next,
+    .x1-calendar-core-week .month-header button.next,
+    .x1-calendar-core-day .month-header button.next,
+    .x1-calendar-core-any .month-header button.next {
+      position: absolute;
+      right: 5px; }
+  .x1-calendar-core-year .item,
+  .x1-calendar-core-quarter .item,
+  .x1-calendar-core-month .item,
+  .x1-calendar-core-week .item,
+  .x1-calendar-core-day .item,
+  .x1-calendar-core-any .item {
+    border: 1px solid #FFFFFF;
+    font-size: 1.9rem;
+    background-color: #f7f7f7;
+    cursor: default; }
+    .x1-calendar-core-year .item:hover:not(.selected):not(.disable),
+    .x1-calendar-core-quarter .item:hover:not(.selected):not(.disable),
+    .x1-calendar-core-month .item:hover:not(.selected):not(.disable),
+    .x1-calendar-core-week .item:hover:not(.selected):not(.disable),
+    .x1-calendar-core-day .item:hover:not(.selected):not(.disable),
+    .x1-calendar-core-any .item:hover:not(.selected):not(.disable) {
+      background-color: #eef4fe; }
+  .x1-calendar-core-year td,
+  .x1-calendar-core-quarter td,
+  .x1-calendar-core-month td,
+  .x1-calendar-core-week td,
+  .x1-calendar-core-day td,
+  .x1-calendar-core-any td {
+    padding: 0 !important; }
+  .x1-calendar-core-year .selected:not(.disable),
+  .x1-calendar-core-quarter .selected:not(.disable),
+  .x1-calendar-core-month .selected:not(.disable),
+  .x1-calendar-core-week .selected:not(.disable),
+  .x1-calendar-core-day .selected:not(.disable),
+  .x1-calendar-core-any .selected:not(.disable) {
+    background-color: #4178BE;
+    color: #FFFFFF; }
+    .x1-calendar-core-year .selected:not(.disable) h3,
+    .x1-calendar-core-quarter .selected:not(.disable) h3,
+    .x1-calendar-core-month .selected:not(.disable) h3,
+    .x1-calendar-core-week .selected:not(.disable) h3,
+    .x1-calendar-core-day .selected:not(.disable) h3,
+    .x1-calendar-core-any .selected:not(.disable) h3 {
+      color: inherit; }
+    .x1-calendar-core-year .selected:not(.disable) .calendar-date,
+    .x1-calendar-core-quarter .selected:not(.disable) .calendar-date,
+    .x1-calendar-core-month .selected:not(.disable) .calendar-date,
+    .x1-calendar-core-week .selected:not(.disable) .calendar-date,
+    .x1-calendar-core-day .selected:not(.disable) .calendar-date,
+    .x1-calendar-core-any .selected:not(.disable) .calendar-date {
+      text-decoration: underline;
+      color: inherit; }
+  .x1-calendar-core-year .day.selected:not(.disable),
+  .x1-calendar-core-quarter .day.selected:not(.disable),
+  .x1-calendar-core-month .day.selected:not(.disable),
+  .x1-calendar-core-week .day.selected:not(.disable),
+  .x1-calendar-core-day .day.selected:not(.disable),
+  .x1-calendar-core-any .day.selected:not(.disable) {
+    background: none; }
+    .x1-calendar-core-year .day.selected:not(.disable) .div-day,
+    .x1-calendar-core-quarter .day.selected:not(.disable) .div-day,
+    .x1-calendar-core-month .day.selected:not(.disable) .div-day,
+    .x1-calendar-core-week .day.selected:not(.disable) .div-day,
+    .x1-calendar-core-day .day.selected:not(.disable) .div-day,
+    .x1-calendar-core-any .day.selected:not(.disable) .div-day {
+      color: #FFFFFF;
+      background-color: #4178BE;
+      font-weight: bold; }
+  .x1-calendar-core-year .disable,
+  .x1-calendar-core-year tr .disable,
+  .x1-calendar-core-year .tr-week.hovered td.disable,
+  .x1-calendar-core-year tr.tr-week.selected td.disable,
+  .x1-calendar-core-year tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-year tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-year .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-year .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-year .day.disable:hover:not(.selected),
+  .x1-calendar-core-quarter .disable,
+  .x1-calendar-core-quarter tr .disable,
+  .x1-calendar-core-quarter .tr-week.hovered td.disable,
+  .x1-calendar-core-quarter tr.tr-week.selected td.disable,
+  .x1-calendar-core-quarter tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-quarter tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-quarter .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-quarter .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-quarter .day.disable:hover:not(.selected),
+  .x1-calendar-core-month .disable,
+  .x1-calendar-core-month tr .disable,
+  .x1-calendar-core-month .tr-week.hovered td.disable,
+  .x1-calendar-core-month tr.tr-week.selected td.disable,
+  .x1-calendar-core-month tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-month tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-month .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-month .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-month .day.disable:hover:not(.selected),
+  .x1-calendar-core-week .disable,
+  .x1-calendar-core-week tr .disable,
+  .x1-calendar-core-week .tr-week.hovered td.disable,
+  .x1-calendar-core-week tr.tr-week.selected td.disable,
+  .x1-calendar-core-week tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-week tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-week .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-week .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-week .day.disable:hover:not(.selected),
+  .x1-calendar-core-day .disable,
+  .x1-calendar-core-day tr .disable,
+  .x1-calendar-core-day .tr-week.hovered td.disable,
+  .x1-calendar-core-day tr.tr-week.selected td.disable,
+  .x1-calendar-core-day tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-day tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-day .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-day .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-day .day.disable:hover:not(.selected),
+  .x1-calendar-core-any .disable,
+  .x1-calendar-core-any tr .disable,
+  .x1-calendar-core-any .tr-week.hovered td.disable,
+  .x1-calendar-core-any tr.tr-week.selected td.disable,
+  .x1-calendar-core-any tr.tr-week.selected td.disable:last-of-type,
+  .x1-calendar-core-any tr.tr-week.selected td.disable:first-of-type,
+  .x1-calendar-core-any .tr-week.hovered td.disable:last-of-type,
+  .x1-calendar-core-any .tr-week.hovered td.disable:first-of-type,
+  .x1-calendar-core-any .day.disable:hover:not(.selected) {
+    background-color: #FFFFFF;
+    border: none;
+    color: #C7C7C7;
+    pointer-events: none; }
+    .x1-calendar-core-year .disable .div-day,
+    .x1-calendar-core-year tr .disable .div-day,
+    .x1-calendar-core-year .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-year tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-year tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-year tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-year .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-year .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-year .day.disable:hover:not(.selected) .div-day,
+    .x1-calendar-core-quarter .disable .div-day,
+    .x1-calendar-core-quarter tr .disable .div-day,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-quarter .day.disable:hover:not(.selected) .div-day,
+    .x1-calendar-core-month .disable .div-day,
+    .x1-calendar-core-month tr .disable .div-day,
+    .x1-calendar-core-month .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-month tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-month tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-month tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-month .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-month .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-month .day.disable:hover:not(.selected) .div-day,
+    .x1-calendar-core-week .disable .div-day,
+    .x1-calendar-core-week tr .disable .div-day,
+    .x1-calendar-core-week .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-week tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-week tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-week tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-week .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-week .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-week .day.disable:hover:not(.selected) .div-day,
+    .x1-calendar-core-day .disable .div-day,
+    .x1-calendar-core-day tr .disable .div-day,
+    .x1-calendar-core-day .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-day tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-day tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-day tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-day .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-day .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-day .day.disable:hover:not(.selected) .div-day,
+    .x1-calendar-core-any .disable .div-day,
+    .x1-calendar-core-any tr .disable .div-day,
+    .x1-calendar-core-any .tr-week.hovered td.disable .div-day,
+    .x1-calendar-core-any tr.tr-week.selected td.disable .div-day,
+    .x1-calendar-core-any tr.tr-week.selected td.disable:last-of-type .div-day,
+    .x1-calendar-core-any tr.tr-week.selected td.disable:first-of-type .div-day,
+    .x1-calendar-core-any .tr-week.hovered td.disable:last-of-type .div-day,
+    .x1-calendar-core-any .tr-week.hovered td.disable:first-of-type .div-day,
+    .x1-calendar-core-any .day.disable:hover:not(.selected) .div-day {
+      border: 1px double #FFFFFF !important;
+      color: #C7C7C7 !important;
+      background-color: #FFFFFF;
+      padding: 8px; }
+      .x1-calendar-core-year .disable .div-day:after, .x1-calendar-core-year .disable .div-day:before,
+      .x1-calendar-core-year tr .disable .div-day:after,
+      .x1-calendar-core-year tr .disable .div-day:before,
+      .x1-calendar-core-year .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-year .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-year tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-year tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-year tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-year tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-year tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-year tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-year .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-year .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-year .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-year .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-year .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-year .day.disable:hover:not(.selected) .div-day:before,
+      .x1-calendar-core-quarter .disable .div-day:after,
+      .x1-calendar-core-quarter .disable .div-day:before,
+      .x1-calendar-core-quarter tr .disable .div-day:after,
+      .x1-calendar-core-quarter tr .disable .div-day:before,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-quarter tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-quarter .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-quarter .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-quarter .day.disable:hover:not(.selected) .div-day:before,
+      .x1-calendar-core-month .disable .div-day:after,
+      .x1-calendar-core-month .disable .div-day:before,
+      .x1-calendar-core-month tr .disable .div-day:after,
+      .x1-calendar-core-month tr .disable .div-day:before,
+      .x1-calendar-core-month .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-month .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-month tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-month tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-month tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-month tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-month tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-month tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-month .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-month .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-month .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-month .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-month .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-month .day.disable:hover:not(.selected) .div-day:before,
+      .x1-calendar-core-week .disable .div-day:after,
+      .x1-calendar-core-week .disable .div-day:before,
+      .x1-calendar-core-week tr .disable .div-day:after,
+      .x1-calendar-core-week tr .disable .div-day:before,
+      .x1-calendar-core-week .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-week .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-week tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-week tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-week tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-week tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-week tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-week tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-week .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-week .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-week .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-week .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-week .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-week .day.disable:hover:not(.selected) .div-day:before,
+      .x1-calendar-core-day .disable .div-day:after,
+      .x1-calendar-core-day .disable .div-day:before,
+      .x1-calendar-core-day tr .disable .div-day:after,
+      .x1-calendar-core-day tr .disable .div-day:before,
+      .x1-calendar-core-day .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-day .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-day tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-day tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-day tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-day tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-day tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-day tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-day .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-day .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-day .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-day .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-day .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-day .day.disable:hover:not(.selected) .div-day:before,
+      .x1-calendar-core-any .disable .div-day:after,
+      .x1-calendar-core-any .disable .div-day:before,
+      .x1-calendar-core-any tr .disable .div-day:after,
+      .x1-calendar-core-any tr .disable .div-day:before,
+      .x1-calendar-core-any .tr-week.hovered td.disable .div-day:after,
+      .x1-calendar-core-any .tr-week.hovered td.disable .div-day:before,
+      .x1-calendar-core-any tr.tr-week.selected td.disable .div-day:after,
+      .x1-calendar-core-any tr.tr-week.selected td.disable .div-day:before,
+      .x1-calendar-core-any tr.tr-week.selected td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-any tr.tr-week.selected td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-any tr.tr-week.selected td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-any tr.tr-week.selected td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-any .tr-week.hovered td.disable:last-of-type .div-day:after,
+      .x1-calendar-core-any .tr-week.hovered td.disable:last-of-type .div-day:before,
+      .x1-calendar-core-any .tr-week.hovered td.disable:first-of-type .div-day:after,
+      .x1-calendar-core-any .tr-week.hovered td.disable:first-of-type .div-day:before,
+      .x1-calendar-core-any .day.disable:hover:not(.selected) .div-day:after,
+      .x1-calendar-core-any .day.disable:hover:not(.selected) .div-day:before {
+        display: none; }
+    .x1-calendar-core-year .disable .calendar-date,
+    .x1-calendar-core-year tr .disable .calendar-date,
+    .x1-calendar-core-year .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-year tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-year tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-year tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-year .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-year .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-year .day.disable:hover:not(.selected) .calendar-date,
+    .x1-calendar-core-quarter .disable .calendar-date,
+    .x1-calendar-core-quarter tr .disable .calendar-date,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-quarter tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-quarter .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-quarter .day.disable:hover:not(.selected) .calendar-date,
+    .x1-calendar-core-month .disable .calendar-date,
+    .x1-calendar-core-month tr .disable .calendar-date,
+    .x1-calendar-core-month .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-month tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-month tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-month tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-month .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-month .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-month .day.disable:hover:not(.selected) .calendar-date,
+    .x1-calendar-core-week .disable .calendar-date,
+    .x1-calendar-core-week tr .disable .calendar-date,
+    .x1-calendar-core-week .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-week tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-week tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-week tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-week .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-week .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-week .day.disable:hover:not(.selected) .calendar-date,
+    .x1-calendar-core-day .disable .calendar-date,
+    .x1-calendar-core-day tr .disable .calendar-date,
+    .x1-calendar-core-day .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-day tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-day tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-day tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-day .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-day .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-day .day.disable:hover:not(.selected) .calendar-date,
+    .x1-calendar-core-any .disable .calendar-date,
+    .x1-calendar-core-any tr .disable .calendar-date,
+    .x1-calendar-core-any .tr-week.hovered td.disable .calendar-date,
+    .x1-calendar-core-any tr.tr-week.selected td.disable .calendar-date,
+    .x1-calendar-core-any tr.tr-week.selected td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-any tr.tr-week.selected td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-any .tr-week.hovered td.disable:last-of-type .calendar-date,
+    .x1-calendar-core-any .tr-week.hovered td.disable:first-of-type .calendar-date,
+    .x1-calendar-core-any .day.disable:hover:not(.selected) .calendar-date {
+      color: #C7C7C7 !important; }
+  .x1-calendar-core-year .start-date.end-date:not(.no-end-date):hover .div-day:after,
+  .x1-calendar-core-quarter .start-date.end-date:not(.no-end-date):hover .div-day:after,
+  .x1-calendar-core-month .start-date.end-date:not(.no-end-date):hover .div-day:after,
+  .x1-calendar-core-week .start-date.end-date:not(.no-end-date):hover .div-day:after,
+  .x1-calendar-core-day .start-date.end-date:not(.no-end-date):hover .div-day:after,
+  .x1-calendar-core-any .start-date.end-date:not(.no-end-date):hover .div-day:after {
+    height: 34px;
+    top: 0;
+    left: 1px; }
+  .x1-calendar-core-year .start-date.end-date:not(.no-end-date) .div-day:after, .x1-calendar-core-year .start-date.end-date:not(.no-end-date) .div-day:before,
+  .x1-calendar-core-quarter .start-date.end-date:not(.no-end-date) .div-day:after,
+  .x1-calendar-core-quarter .start-date.end-date:not(.no-end-date) .div-day:before,
+  .x1-calendar-core-month .start-date.end-date:not(.no-end-date) .div-day:after,
+  .x1-calendar-core-month .start-date.end-date:not(.no-end-date) .div-day:before,
+  .x1-calendar-core-week .start-date.end-date:not(.no-end-date) .div-day:after,
+  .x1-calendar-core-week .start-date.end-date:not(.no-end-date) .div-day:before,
+  .x1-calendar-core-day .start-date.end-date:not(.no-end-date) .div-day:after,
+  .x1-calendar-core-day .start-date.end-date:not(.no-end-date) .div-day:before,
+  .x1-calendar-core-any .start-date.end-date:not(.no-end-date) .div-day:after,
+  .x1-calendar-core-any .start-date.end-date:not(.no-end-date) .div-day:before {
+    display: none; }
+  .x1-calendar-core-year .start-date .div-day,
+  .x1-calendar-core-quarter .start-date .div-day,
+  .x1-calendar-core-month .start-date .div-day,
+  .x1-calendar-core-week .start-date .div-day,
+  .x1-calendar-core-day .start-date .div-day,
+  .x1-calendar-core-any .start-date .div-day {
+    background: #4178BE;
+    border: 1px double #4178BE; }
+    .x1-calendar-core-year .start-date .div-day .calendar-date,
+    .x1-calendar-core-quarter .start-date .div-day .calendar-date,
+    .x1-calendar-core-month .start-date .div-day .calendar-date,
+    .x1-calendar-core-week .start-date .div-day .calendar-date,
+    .x1-calendar-core-day .start-date .div-day .calendar-date,
+    .x1-calendar-core-any .start-date .div-day .calendar-date {
+      text-decoration: underline;
+      color: #FFFFFF; }
+    .x1-calendar-core-year .start-date .div-day:after,
+    .x1-calendar-core-quarter .start-date .div-day:after,
+    .x1-calendar-core-month .start-date .div-day:after,
+    .x1-calendar-core-week .start-date .div-day:after,
+    .x1-calendar-core-day .start-date .div-day:after,
+    .x1-calendar-core-any .start-date .div-day:after {
+      top: -1px; }
+    .x1-calendar-core-year .start-date .div-day:before,
+    .x1-calendar-core-quarter .start-date .div-day:before,
+    .x1-calendar-core-month .start-date .div-day:before,
+    .x1-calendar-core-week .start-date .div-day:before,
+    .x1-calendar-core-day .start-date .div-day:before,
+    .x1-calendar-core-any .start-date .div-day:before {
+      top: 5px;
+      width: 25px;
+      height: 25px; }
+  .x1-calendar-core-year .start-date:hover .div-day,
+  .x1-calendar-core-quarter .start-date:hover .div-day,
+  .x1-calendar-core-month .start-date:hover .div-day,
+  .x1-calendar-core-week .start-date:hover .div-day,
+  .x1-calendar-core-day .start-date:hover .div-day,
+  .x1-calendar-core-any .start-date:hover .div-day {
+    background: #eef4fe;
+    border: 1px double #eef4fe; }
+    .x1-calendar-core-year .start-date:hover .div-day .calendar-date,
+    .x1-calendar-core-quarter .start-date:hover .div-day .calendar-date,
+    .x1-calendar-core-month .start-date:hover .div-day .calendar-date,
+    .x1-calendar-core-week .start-date:hover .div-day .calendar-date,
+    .x1-calendar-core-day .start-date:hover .div-day .calendar-date,
+    .x1-calendar-core-any .start-date:hover .div-day .calendar-date {
+      text-decoration: underline;
+      color: #000000; }
+    .x1-calendar-core-year .start-date:hover .div-day:before,
+    .x1-calendar-core-quarter .start-date:hover .div-day:before,
+    .x1-calendar-core-month .start-date:hover .div-day:before,
+    .x1-calendar-core-week .start-date:hover .div-day:before,
+    .x1-calendar-core-day .start-date:hover .div-day:before,
+    .x1-calendar-core-any .start-date:hover .div-day:before {
+      border: 1px double #4178BE;
+      border-top: none;
+      border-left: none; }
+  .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day,
+  .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day,
+  .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day,
+  .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day,
+  .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day,
+  .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day {
+    background: #4178BE;
+    border: 1px double #4178BE; }
+    .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date,
+    .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date,
+    .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date,
+    .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date,
+    .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date,
+    .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day .calendar-date {
+      text-decoration: underline;
+      color: #FFFFFF; }
+    .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after,
+    .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after,
+    .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after,
+    .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after,
+    .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after,
+    .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:after {
+      top: -1px; }
+    .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before,
+    .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before,
+    .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before,
+    .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before,
+    .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before,
+    .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date) .div-day:before {
+      top: 4px;
+      width: 25px;
+      height: 27px; }
+  .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day,
+  .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day,
+  .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day,
+  .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day,
+  .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day,
+  .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day {
+    background: #eef4fe;
+    border: 1px double #eef4fe; }
+    .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date,
+    .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date,
+    .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date,
+    .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date,
+    .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date,
+    .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day .calendar-date {
+      text-decoration: underline;
+      color: #000000; }
+    .x1-calendar-core-year .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before,
+    .x1-calendar-core-quarter .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before,
+    .x1-calendar-core-month .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before,
+    .x1-calendar-core-week .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before,
+    .x1-calendar-core-day .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before,
+    .x1-calendar-core-any .end-date:not(.no-end-date):not(.disable):not(.start-date):hover .div-day:before {
+      border: 1px double #4178BE;
+      border-top: none;
+      border-left: none; }
+  .x1-calendar-core-year td.week-no-end-date:not(.disable),
+  .x1-calendar-core-quarter td.week-no-end-date:not(.disable),
+  .x1-calendar-core-month td.week-no-end-date:not(.disable),
+  .x1-calendar-core-week td.week-no-end-date:not(.disable),
+  .x1-calendar-core-day td.week-no-end-date:not(.disable),
+  .x1-calendar-core-any td.week-no-end-date:not(.disable) {
+    background-color: #eef4fe;
+    border: 1px solid #eef4fe;
+    color: #777677; }
+    .x1-calendar-core-year td.week-no-end-date:not(.disable) :last-of-type,
+    .x1-calendar-core-quarter td.week-no-end-date:not(.disable) :last-of-type,
+    .x1-calendar-core-month td.week-no-end-date:not(.disable) :last-of-type,
+    .x1-calendar-core-week td.week-no-end-date:not(.disable) :last-of-type,
+    .x1-calendar-core-day td.week-no-end-date:not(.disable) :last-of-type,
+    .x1-calendar-core-any td.week-no-end-date:not(.disable) :last-of-type {
+      background-color: #eef4fe;
+      border: 1px solid #eef4fe;
+      color: #777677;
+      text-decoration: none; }
+  .x1-calendar-core-year td.week-no-end-date:not(.disable):not(:first-of-type) .div-day,
+  .x1-calendar-core-quarter td.week-no-end-date:not(.disable):not(:first-of-type) .div-day,
+  .x1-calendar-core-month td.week-no-end-date:not(.disable):not(:first-of-type) .div-day,
+  .x1-calendar-core-week td.week-no-end-date:not(.disable):not(:first-of-type) .div-day,
+  .x1-calendar-core-day td.week-no-end-date:not(.disable):not(:first-of-type) .div-day,
+  .x1-calendar-core-any td.week-no-end-date:not(.disable):not(:first-of-type) .div-day {
+    border: 1px solid #eef4fe !important; }
+    .x1-calendar-core-year td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after, .x1-calendar-core-year td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before,
+    .x1-calendar-core-quarter td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after,
+    .x1-calendar-core-quarter td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before,
+    .x1-calendar-core-month td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after,
+    .x1-calendar-core-month td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before,
+    .x1-calendar-core-week td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after,
+    .x1-calendar-core-week td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before,
+    .x1-calendar-core-day td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after,
+    .x1-calendar-core-day td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before,
+    .x1-calendar-core-any td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:after,
+    .x1-calendar-core-any td.week-no-end-date:not(.disable):not(:first-of-type) .div-day:before {
+      display: none; }
+  .x1-calendar-core-year tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-year tr.hovered td.week-no-end-date:first-of-type .div-day,
+  .x1-calendar-core-quarter tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-quarter tr.hovered td.week-no-end-date:first-of-type .div-day,
+  .x1-calendar-core-month tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-month tr.hovered td.week-no-end-date:first-of-type .div-day,
+  .x1-calendar-core-week tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-week tr.hovered td.week-no-end-date:first-of-type .div-day,
+  .x1-calendar-core-day tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-day tr.hovered td.week-no-end-date:first-of-type .div-day,
+  .x1-calendar-core-any tr.selected td.no-end-date:first-of-type .div-day,
+  .x1-calendar-core-any tr.hovered td.week-no-end-date:first-of-type .div-day {
+    font-weight: bold; }
+    .x1-calendar-core-year tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-year tr.hovered td.week-no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-quarter tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-quarter tr.hovered td.week-no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-month tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-month tr.hovered td.week-no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-week tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-week tr.hovered td.week-no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-day tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-day tr.hovered td.week-no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-any tr.selected td.no-end-date:first-of-type .div-day:after,
+    .x1-calendar-core-any tr.hovered td.week-no-end-date:first-of-type .div-day:after {
+      background-color: #eef4fe; }
+  .x1-calendar-core-year .day, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable), .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-year .year-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-quarter .day,
+  .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-month .day,
+  .x1-calendar-core-month .month-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-month .year-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-week .day,
+  .x1-calendar-core-week .month-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-week .year-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-day .day,
+  .x1-calendar-core-day .month-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-day .year-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-any .day,
+  .x1-calendar-core-any .month-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable),
+  .x1-calendar-core-any .year-blocks:not(.selected):not(.disable) {
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    color: #5A5A5A; }
+    .x1-calendar-core-year .day:hover:not(.selected), .x1-calendar-core-year .month-blocks:not(.selected):not(.disable):hover:not(.selected), .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-year .year-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-quarter .day:hover:not(.selected),
+    .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-month .day:hover:not(.selected),
+    .x1-calendar-core-month .month-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-month .year-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-week .day:hover:not(.selected),
+    .x1-calendar-core-week .month-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-week .year-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-day .day:hover:not(.selected),
+    .x1-calendar-core-day .month-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-day .year-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-any .day:hover:not(.selected),
+    .x1-calendar-core-any .month-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable):hover:not(.selected),
+    .x1-calendar-core-any .year-blocks:not(.selected):not(.disable):hover:not(.selected) {
+      background-color: #eef4fe; }
+      .x1-calendar-core-year .day:hover:not(.selected) .div-day, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-year .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-quarter .day:hover:not(.selected) .div-day,
+      .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-month .day:hover:not(.selected) .div-day,
+      .x1-calendar-core-month .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-month .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-week .day:hover:not(.selected) .div-day,
+      .x1-calendar-core-week .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-week .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-day .day:hover:not(.selected) .div-day,
+      .x1-calendar-core-day .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-day .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-any .day:hover:not(.selected) .div-day,
+      .x1-calendar-core-any .month-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day,
+      .x1-calendar-core-any .year-blocks:not(.selected):not(.disable):hover:not(.selected) .div-day {
+        border: 1px solid #eef4fe; }
+    .x1-calendar-core-year .day.start-date, .x1-calendar-core-year .day.end-date, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).start-date, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).end-date, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).start-date, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-quarter .day.start-date,
+    .x1-calendar-core-quarter .day.end-date,
+    .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-month .day.start-date,
+    .x1-calendar-core-month .day.end-date,
+    .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-week .day.start-date,
+    .x1-calendar-core-week .day.end-date,
+    .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-day .day.start-date,
+    .x1-calendar-core-day .day.end-date,
+    .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-any .day.start-date,
+    .x1-calendar-core-any .day.end-date,
+    .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).end-date,
+    .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).start-date,
+    .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).end-date {
+      font-weight: bold; }
+    .x1-calendar-core-year .day.end-date.no-end-date, .x1-calendar-core-year .day.in-range, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).end-date.no-end-date, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).in-range, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-quarter .day.end-date.no-end-date,
+    .x1-calendar-core-quarter .day.in-range,
+    .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-month .day.end-date.no-end-date,
+    .x1-calendar-core-month .day.in-range,
+    .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-week .day.end-date.no-end-date,
+    .x1-calendar-core-week .day.in-range,
+    .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-day .day.end-date.no-end-date,
+    .x1-calendar-core-day .day.in-range,
+    .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-any .day.end-date.no-end-date,
+    .x1-calendar-core-any .day.in-range,
+    .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).in-range,
+    .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).end-date.no-end-date,
+    .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).in-range {
+      background-color: #eef4fe;
+      border: 1px solid #eef4fe;
+      color: #777677; }
+      .x1-calendar-core-year .day.end-date.no-end-date .div-day, .x1-calendar-core-year .day.in-range .div-day, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day, .x1-calendar-core-year .month-blocks:not(.selected):not(.disable).in-range .div-day, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day, .x1-calendar-core-year .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-year .year-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-quarter .day.end-date.no-end-date .div-day,
+      .x1-calendar-core-quarter .day.in-range .div-day,
+      .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-quarter .month-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-quarter .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-quarter .year-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-month .day.end-date.no-end-date .div-day,
+      .x1-calendar-core-month .day.in-range .div-day,
+      .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-month .month-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-month .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-month .year-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-week .day.end-date.no-end-date .div-day,
+      .x1-calendar-core-week .day.in-range .div-day,
+      .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-week .month-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-week .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-week .year-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-day .day.end-date.no-end-date .div-day,
+      .x1-calendar-core-day .day.in-range .div-day,
+      .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-day .month-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-day .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-day .year-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-any .day.end-date.no-end-date .div-day,
+      .x1-calendar-core-any .day.in-range .div-day,
+      .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-any .month-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-any .quarter-blocks:not(.selected):not(.disable).in-range .div-day,
+      .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).end-date.no-end-date .div-day,
+      .x1-calendar-core-any .year-blocks:not(.selected):not(.disable).in-range .div-day {
+        border: 1px solid #eef4fe; }
+
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+@charset "UTF-8";
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-calendar-core-month .month-wrapper {
+  max-height: 265px;
+  overflow: auto; }
+  .x1-calendar-core-month .month-wrapper .month-blocks {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 15px 0;
+    font-size: 19px;
+    margin: 8px 0;
+    display: block;
+    font-weight: normal; }
+
+.x1-calendar-core-month .disable {
+  border: 1px solid #FFFFFF; }
+
+@charset "UTF-8";
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-calendar-core-quarter .quarter-blocks {
+  padding: 6px;
+  margin: 6px 0;
+  cursor: pointer; }
+  .x1-calendar-core-quarter .quarter-blocks:not(.selected) h3, .x1-calendar-core-quarter .quarter-blocks:not(.selected) small {
+    color: #5A5A5A; }
+  .x1-calendar-core-quarter .quarter-blocks.selected {
+    border-radius: 3px; }
+    .x1-calendar-core-quarter .quarter-blocks.selected h3 {
+      color: #FFFFFF; }
+  .x1-calendar-core-quarter .quarter-blocks.disable h3, .x1-calendar-core-quarter .quarter-blocks.disable small {
+    color: #C7C7C7; }
+
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view-week.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-calendar-core-week .tr-week .fiscal-week-selected.min-day[data-last-day="last"]:not(.fiscal-week-start):not(.fiscal-week-end) .div-day:before, .x1-calendar-core-week .tr-week .fiscal-week-selected.min-day[data-last-day="last"]:not(.fiscal-week-start):not(.fiscal-week-end) .div-day:after,
+.x1-calendar-core-week .tr-week .fiscal-week-selected.max-day[data-last-day="first"]:not(.fiscal-week-start):not(.fiscal-week-end) .div-day:before,
+.x1-calendar-core-week .tr-week .fiscal-week-selected.max-day[data-last-day="first"]:not(.fiscal-week-start):not(.fiscal-week-end) .div-day:after {
+  display: none !important; }
+
+.x1-calendar-core-week .tr-week .max-day:first-child:hover .div-day:before, .x1-calendar-core-week .tr-week .max-day:first-child:hover .div-day:after,
+.x1-calendar-core-week .tr-week.selected .max-day:first-child .div-day:before,
+.x1-calendar-core-week .tr-week.selected .max-day:first-child .div-day:after,
+.x1-calendar-core-week .tr-week .min-day:last-child:hover .div-day:before,
+.x1-calendar-core-week .tr-week .min-day:last-child:hover .div-day:after,
+.x1-calendar-core-week .tr-week.selected .min-day:last-child .div-day:before,
+.x1-calendar-core-week .tr-week.selected .min-day:last-child .div-day:after {
+  display: none !important; }
+
+.x1-calendar-core-week .tr-week td {
+  cursor: default;
+  border: 1px solid #FFFFFF; }
+  .x1-calendar-core-week .tr-week td.disable {
+    border: 1px solid #FFFFFF; }
+    .x1-calendar-core-week .tr-week td.disable .div-day {
+      border: 1px solid #FFFFFF; }
+
+.x1-calendar-core-week .tr-week.selected {
+  background: #eef4fe;
+  color: #FFFFFF; }
+  .x1-calendar-core-week .tr-week.selected td {
+    border: 1px solid #eef4fe;
+    background: #eef4fe; }
+    .x1-calendar-core-week .tr-week.selected td .div-day {
+      border: 1px double #eef4fe;
+      color: #777677; }
+    .x1-calendar-core-week .tr-week.selected td.max-day .div-day, .x1-calendar-core-week .tr-week.selected td:last-of-type:not(.in-date-range):not(.no-end-date):not(.disable) .div-day {
+      background: #4178BE;
+      border: 1px double #4178BE; }
+      .x1-calendar-core-week .tr-week.selected td.max-day .div-day .calendar-date, .x1-calendar-core-week .tr-week.selected td:last-of-type:not(.in-date-range):not(.no-end-date):not(.disable) .div-day .calendar-date {
+        text-decoration: underline;
+        color: #FFFFFF; }
+    .x1-calendar-core-week .tr-week.selected td.min-day .div-day, .x1-calendar-core-week .tr-week.selected td:first-of-type:not(.in-date-range):not(.disable) .div-day {
+      background: #4178BE;
+      border: 1px double #4178BE; }
+      .x1-calendar-core-week .tr-week.selected td.min-day .div-day .calendar-date, .x1-calendar-core-week .tr-week.selected td:first-of-type:not(.in-date-range):not(.disable) .div-day .calendar-date {
+        text-decoration: underline;
+        color: #FFFFFF; }
+
+.x1-calendar-core-week .tr-week.hovered {
+  background: #eef4fe; }
+  .x1-calendar-core-week .tr-week.hovered td:not(:first-child):not(:last-child) {
+    background: #eef4fe; }
+  .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range) {
+    border: 1px solid #eef4fe; }
+    .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range) .div-day {
+      border: 1px solid #eef4fe; }
+    .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).disable {
+      border: 1px solid #FFFFFF; }
+      .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).disable .div-day {
+        border: 1px solid #FFFFFF; }
+    .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).max-day .div-day, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):last-of-type:not(.no-end-date):not(.disable) .div-day {
+      background: #eef4fe;
+      border: 1px double #eef4fe; }
+      .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).max-day .div-day .calendar-date, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):last-of-type:not(.no-end-date):not(.disable) .div-day .calendar-date {
+        text-decoration: underline;
+        color: #000000; }
+      .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).max-day .div-day:before, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):last-of-type:not(.no-end-date):not(.disable) .div-day:before {
+        border: 1px double #4178BE;
+        border-top: none;
+        border-left: none; }
+    .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).min-day .div-day, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):first-of-type:not(.disable) .div-day {
+      background: #eef4fe;
+      border: 1px double #eef4fe; }
+      .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).min-day .div-day .calendar-date, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):first-of-type:not(.disable) .div-day .calendar-date {
+        text-decoration: underline;
+        color: #000000; }
+      .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range).min-day .div-day:before, .x1-calendar-core-week .tr-week.hovered td:not(.in-date-range):first-of-type:not(.disable) .div-day:before {
+        border: 1px double #4178BE;
+        border-top: none;
+        border-left: none; }
+  .x1-calendar-core-week .tr-week.hovered td.in-date-range {
+    background-color: #eef4fe; }
+    .x1-calendar-core-week .tr-week.hovered td.in-date-range .div-day {
+      background-color: #eef4fe; }
+    .x1-calendar-core-week .tr-week.hovered td.in-date-range:first-of-type .div-day {
+      background: #eef4fe;
+      border: 1px double #eef4fe; }
+      .x1-calendar-core-week .tr-week.hovered td.in-date-range:first-of-type .div-day .calendar-date {
+        text-decoration: underline;
+        color: #000000; }
+      .x1-calendar-core-week .tr-week.hovered td.in-date-range:first-of-type .div-day:before {
+        border: 1px double #4178BE;
+        border-top: none;
+        border-left: none; }
+    .x1-calendar-core-week .tr-week.hovered td.in-date-range:first-of-type .div-day:after {
+      background-color: #eef4fe; }
+    .x1-calendar-core-week .tr-week.hovered td.in-date-range:last-of-type .div-day {
+      background: #eef4fe;
+      border: 1px double #eef4fe; }
+      .x1-calendar-core-week .tr-week.hovered td.in-date-range:last-of-type .div-day .calendar-date {
+        text-decoration: underline;
+        color: #000000; }
+      .x1-calendar-core-week .tr-week.hovered td.in-date-range:last-of-type .div-day:before {
+        border: 1px double #4178BE;
+        border-top: none;
+        border-left: none; }
+    .x1-calendar-core-week .tr-week.hovered td.in-date-range:last-of-type .div-day:after {
+      background-color: #eef4fe; }
+
+.x1-calendar-core-week .tr-week.hovered.selected td.multiselection:first-of-type .div-day:after, .x1-calendar-core-week .tr-week.hovered.selected td.multiselection:last-of-type .div-day:after {
+  background-color: #eef4fe; }
+
+.x1-calendar-core-week .tr-week td.disable.fiscal-week-selected {
+  border: 1px solid #FFFFFF; }
+
+.x1-calendar-core-week .tr-week .selected,
+.x1-calendar-core-week .tr-week .fiscal-week-selected {
+  background: #eef4fe;
+  color: #FFFFFF; }
+  .x1-calendar-core-week .tr-week .selected td,
+  .x1-calendar-core-week .tr-week .fiscal-week-selected td {
+    border: 1px solid #eef4fe; }
+    .x1-calendar-core-week .tr-week .selected td:last-of-type .div-day,
+    .x1-calendar-core-week .tr-week .fiscal-week-selected td:last-of-type .div-day {
+      background: #4178BE;
+      border: 1px double #4178BE; }
+      .x1-calendar-core-week .tr-week .selected td:last-of-type .div-day .calendar-date,
+      .x1-calendar-core-week .tr-week .fiscal-week-selected td:last-of-type .div-day .calendar-date {
+        text-decoration: underline;
+        color: #FFFFFF; }
+    .x1-calendar-core-week .tr-week .selected td:first-of-type .div-day,
+    .x1-calendar-core-week .tr-week .fiscal-week-selected td:first-of-type .div-day {
+      background: #4178BE;
+      border: 1px double #4178BE; }
+      .x1-calendar-core-week .tr-week .selected td:first-of-type .div-day .calendar-date,
+      .x1-calendar-core-week .tr-week .fiscal-week-selected td:first-of-type .div-day .calendar-date {
+        text-decoration: underline;
+        color: #FFFFFF; }
+    .x1-calendar-core-week .tr-week .selected td .div-day,
+    .x1-calendar-core-week .tr-week .fiscal-week-selected td .div-day {
+      border: 1px double #eef4fe;
+      color: #777677; }
+
+.x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable) {
+  border: 1px solid #eef4fe; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable) .div-day {
+    border: 1px double #eef4fe;
+    color: #777677; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable).fiscal-week-end:not(.in-date-range) .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable)[data-last-day="last"]:not(.in-date-range) .div-day {
+    background: #4178BE;
+    border: 1px double #4178BE; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable).fiscal-week-end:not(.in-date-range) .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable)[data-last-day="last"]:not(.in-date-range) .div-day .calendar-date {
+      text-decoration: underline;
+      color: #FFFFFF; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable).fiscal-week-start:not(.in-date-range) .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable)[data-last-day="first"]:not(.in-date-range) .div-day {
+    background: #4178BE;
+    border: 1px double #4178BE; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable).fiscal-week-start:not(.in-date-range) .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-selected:not(.disable)[data-last-day="first"]:not(.in-date-range) .div-day .calendar-date {
+      text-decoration: underline;
+      color: #FFFFFF; }
+
+.x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range) {
+  background: #eef4fe;
+  border: 1px double #eef4fe; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range) .div-day {
+    border: 1px double #eef4fe; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-end .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="last"] .div-day {
+    background: #eef4fe;
+    border: 1px double #eef4fe; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-end .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="last"] .div-day .calendar-date {
+      text-decoration: underline;
+      color: #000000; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-end .div-day:before, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="last"] .div-day:before {
+      border: 1px double #4178BE;
+      border-top: none;
+      border-left: none; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-start .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="first"] .div-day {
+    background: #eef4fe;
+    border: 1px double #eef4fe; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-start .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="first"] .div-day .calendar-date {
+      text-decoration: underline;
+      color: #000000; }
+    .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range).fiscal-week-start .div-day:before, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable):not(.in-date-range)[data-last-day="first"] .div-day:before {
+      border: 1px double #4178BE;
+      border-top: none;
+      border-left: none; }
+
+.x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-end .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="last"] .div-day {
+  background: #eef4fe;
+  border: 1px double #eef4fe; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-end .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="last"] .div-day .calendar-date {
+    text-decoration: underline;
+    color: #000000; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-end .div-day:before, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="last"] .div-day:before {
+    border: 1px double #4178BE;
+    border-top: none;
+    border-left: none; }
+
+.x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-start .div-day, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="first"] .div-day {
+  background: #eef4fe;
+  border: 1px double #eef4fe; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-start .div-day .calendar-date, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="first"] .div-day .calendar-date {
+    text-decoration: underline;
+    color: #000000; }
+  .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected.fiscal-week-start .div-day:before, .x1-calendar-core-week .tr-week td.fiscal-week-hover:not(.disable).multiselection.fiscal-week-selected[data-last-day="first"] .div-day:before {
+    border: 1px double #4178BE;
+    border-top: none;
+    border-left: none; }
+
+.x1-calendar-core-week .tr-week .end-date.start-date .div-day:before, .x1-calendar-core-week .tr-week .end-date.start-date .div-day:after,
+.x1-calendar-core-week .tr-week .fiscal-week-end.fiscal-week-start .div-day:before,
+.x1-calendar-core-week .tr-week .fiscal-week-end.fiscal-week-start .div-day:after {
+  display: none; }
+
+@charset "UTF-8";
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ *
+ * Licensed Materials – Property of IBM
+ *
+ * calendar-view.mixin.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-calendar-core-year .year-blocks {
+  padding: 15px 0;
+  margin: 6px 0;
+  cursor: pointer; }
+  .x1-calendar-core-year .year-blocks:not(.selected) h3, .x1-calendar-core-year .year-blocks:not(.selected) span {
+    color: #5A5A5A; }
+  .x1-calendar-core-year .year-blocks .fiscal-year-label {
+    font-size: 15px; }
+  .x1-calendar-core-year .year-blocks h3 {
+    margin: 20px 0; }

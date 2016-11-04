@@ -1,0 +1,17 @@
+@import "../src/x1-ui-sass-tools";
+
+h1[id] {
+	padding-top: inherit;
+	margin-top: inherit;
+}
+
+.bs-dark-example,
+.bs-example.bs-dark-example {
+	background-color: $gray80;
+}
+
+.bs-callout {
+	h3, h4, h5, h6 {
+		margin-top: 0;
+	}
+}

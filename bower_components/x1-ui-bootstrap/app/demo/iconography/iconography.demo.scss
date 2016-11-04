@@ -1,0 +1,21 @@
+@import "../../src/x1-ui-sass-tools";
+
+.bs-glyphicons {
+	width: 880px;
+
+	form {
+		margin: 2px;
+
+		input[type="search"] + .glyphicon-search {
+			margin: 0;
+		}
+	}
+	.bs-glyphicons-list li:hover {
+		background-color: $brand-secondary;
+		cursor: pointer;
+
+		.glyphicon {
+			color: $white;
+		}
+	}
+}

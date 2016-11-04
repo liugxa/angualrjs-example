@@ -1,0 +1,375 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Base styles
+// --------------------------------------------------
+
+.btn {
+	font-size: $btn-font-size-base;
+	font-family: $btn-font-family;
+	border-width: $btn-border-width;
+	border-radius: $btn-border-radius;
+	@include com-button-size($btn-default-padding, $btn-font-size-base, $btn-default-height);
+
+	&,
+	&:active,
+	&.active {
+		&:focus,
+		&.focus {
+			outline: none;
+		}
+	}
+
+	&:hover,
+	&:focus,
+	&.focus {
+		border-color: transparent;
+	}
+
+	&:active,
+	&.active {
+		@include box-shadow(none);
+	}
+
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		@include opacity(1);
+	}
+
+	+ .btn {
+		margin-left: 10px;
+	}
+}
+
+// Alternate buttons
+// --------------------------------------------------
+
+.btn-glyphicon {
+	.glyphicon {
+		margin-right: 10px;
+		float: left;
+	}
+}
+
+.btn-badge {
+	border-width: 1px;
+	min-width: 180px;
+	text-align: left;
+
+	&.btn {
+		padding: 0 10px;
+	}
+	&.btn-default,
+	&.btn-secondary {
+		@include btn-variant($btn-badge-color, $btn-badge-color, $btn-badge-bg, $btn-badge-border);
+	}
+	&.btn-default {
+		&:hover,
+		&:focus,
+		&.focus {
+			@include btn-variant($btn-badge-color, $btn-badge-color, $brand-primary-10, $brand-primary-10);
+		}
+		&:active:hover,
+		&:active:focus,
+		&.focus:active,
+		&.active:hover,
+		&.active:focus,
+		&.active.focus,
+		&:active,
+		&.active {
+			background-color: $brand-primary-10;
+			font-weight: $font-weight-bold;
+			border-color: $brand-primary;
+			color: $brand-primary;
+		}
+	}
+	&.btn-secondary {
+		&:hover,
+		&:focus,
+		&.focus {
+			@include btn-variant($btn-badge-color, $btn-badge-color, $brand-secondary-10, $brand-secondary-10);
+		}
+		&:active:hover,
+		&:active:focus,
+		&.focus:active,
+		&.active:hover,
+		&.active:focus,
+		&.active.focus,
+		&:active,
+		&.active {
+			background-color: $brand-secondary-10;
+			font-weight: $font-weight-bold;
+			border-color: $brand-secondary;
+			color: $brand-secondary;
+		}
+	}
+	.badge {
+		font-weight: $font-weight-roman;
+		background-color: transparent;
+		color: inherit;
+	}
+}
+
+.btn-default {
+	@include btn-variant($btn-default-color, $btn-default-color, $btn-default-bg, $btn-default-border);
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $gray60;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $btn-primary-disable-bg;
+			border-color: $btn-primary-disable-bg;
+			color: $btn-primary-disable-color;
+
+			.glyphicon {
+				color: $btn-primary-disable-color;
+			}
+		}
+		.glyphicon {
+			color: $btn-primary-disable-color;
+		}
+	}
+}
+
+.btn-primary {
+	@include btn-variant($btn-primary-color, $btn-primary-color, $btn-primary-bg, $btn-primary-border, true);
+
+	&.btn-white {
+		@include btn-variant($btn-white-primary-color, $blue60, $btn-white-primary-bg, $btn-white-primary-border, true);
+
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active,
+		.open > &.dropdown-toggle {
+			&,
+			&:hover,
+			&:focus,
+			&.focus {
+				background-color: $btn-white-primary-bg;
+			}
+		}
+	}
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		&,
+		&:hover,
+		&:focus,
+		&.focus {
+			background-color: $blue60;
+			border-color: transparent;
+		}
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $btn-primary-disable-bg;
+			border-color: $btn-primary-disable-bg;
+			color: $btn-primary-disable-color;
+
+			.glyphicon {
+				color: $btn-primary-disable-color;
+			}
+		}
+		.glyphicon {
+			color: $btn-primary-disable-color;
+		}
+	}
+}
+
+.btn-secondary,
+.btn-cancel {
+	@include btn-variant($btn-secondary-color, $white, $btn-secondary-bg, $btn-secondary-border, true);
+
+	&.btn-white {
+		@include btn-variant($btn-white-secondary-color, $btn-secondary-color, $btn-white-secondary-bg, $btn-white-secondary-border, true);
+	}
+	&.btn-gray {
+		@include btn-variant($gray60, $white, $white, $gray50, true);
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&,
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			background-color: $btn-secondary-disable-bg;
+			border-color: $btn-secondary-disable-border;
+			color: $btn-secondary-disable-color;
+
+			.glyphicon {
+				color: $btn-secondary-disable-color;
+			}
+		}
+		.glyphicon {
+			color: $btn-secondary-disable-color;
+		}
+	}
+}
+
+.btn-success {
+	@include btn-variant($btn-success-color, $btn-success-color, $btn-success-bg, $btn-success-border);
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $green50;
+	}
+}
+.btn-info {
+	@include btn-variant($btn-info-color, $btn-info-color, $btn-info-bg, $btn-info-border);
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $blue40;
+	}
+}
+.btn-warning {
+	@include btn-variant($btn-warning-color, $btn-warning-color, $btn-warning-bg, $btn-warning-border);
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $yellow60;
+	}
+}
+.btn-danger {
+	@include btn-variant($btn-danger-color, $btn-danger-color, $btn-danger-bg, $btn-danger-border);
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $red60;
+	}
+}
+
+
+// Link buttons
+// -------------------------
+
+// Make a button look and behave like a link
+.btn-link,
+.btn-link-light {
+	color: $link-color;
+	font-weight: normal;
+	border-radius: 0;
+	border: none;
+	padding: 0;
+
+	&,
+	&:active,
+	&.active,
+	&[disabled],
+	fieldset[disabled] & {
+		background-color: transparent;
+		@include box-shadow(none);
+	}
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		border-color: transparent;
+	}
+	&:hover,
+	&:focus {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+		background-color: transparent;
+	}
+	&[disabled],
+	fieldset[disabled] & {
+		&:hover,
+		&:focus {
+			color: $btn-link-disabled-color;
+			text-decoration: none;
+		}
+	}
+}
+.btn-link-light {
+	&,
+	&:hover,
+	&:focus {
+		color: $link-color2;
+	}
+}
+
+// Button Sizes
+// --------------------------------------------------
+// line-height: ensure proper height of button next to small input
+
+
+.btn-sm {
+	@include com-button-size($btn-sm-padding, $btn-font-size-small, $btn-sm-height);
+}
+.btn-md {
+	@include com-button-size($btn-default-padding, $btn-font-size-base, $btn-default-height);
+}
+.btn-lg {
+	@include com-button-size($btn-lg-padding, $btn-font-size-base, $btn-lg-height);
+}
+
+// Block button
+// --------------------------------------------------
+
+.btn-block {
+	display: block;
+	width: 100%;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+	margin-top: 5px;
+	margin-left: 0;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	&.btn-block {
+		width: 100%;
+	}
+}

@@ -1,0 +1,232 @@
+{
+	"viewId": 3,
+	"cellSize": "md",
+	"forceFit": true,
+	"gridview": true,
+	"headertitles": true,
+	"datatype": "local",
+	"sortorder": "asc",
+	"sortFirstCol": false,
+	"loadui": "disable",
+	"rowNum": 100,
+	"rowList": [20, 30, 50],
+	"usePager": false,
+	"autoresizeOnLoad": true,
+	"useSmarterColumnWidths": false,
+	"viewsortcols": [false, "horizontal", true],
+	"maxWidgetColumns": 4,
+	"frozenStaticCols": false,
+	"x1HorizontalScroll": true,
+	"useGroupedHeaders": true,
+	"maxSort": 3,
+	"sortOnHiddenColumns": true,
+	"maxFilter": "Infinity",
+	"filterOnHiddenColumns": true,
+	"multiSort": true,
+	"x1Filters": true,
+	"columns": [
+		{
+			"index": "Artist",
+			"name": "Artist",
+			"resourceName": "Key_Artist",
+			"width": 194,
+			"displayOrder": 1,
+			"sorttype": "text",
+			"sortCriteria": {
+				"sortOrder": 1,
+				"sortDirection": "asc"
+			},
+			"filterCriteria": null,
+			"hidden": false
+		}, {
+			"index": "Name",
+			"name": "Name",
+			"resourceName": "Key_Name",
+			"width": 267,
+			"displayOrder": 2,
+			"sorttype": "text",
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"hidden": false
+		}, {
+			"index": "Genre",
+			"name": "Genre",
+			"resourceName": "Key_Genre",
+			"width": 102,
+			"editable": true,
+			"displayOrder": 3,
+			"sorttype": "enum",
+			"sortCriteria": null,
+			"filterCriteria": {
+				"filter": {
+					"value": ["2"]
+				},
+				"filterOperator": "IN",
+				"filterOrder": 1
+			},
+			"filterOptions": [
+				{
+					"value": "1",
+					"label": "Key_Rock"
+				}, {
+					"value": "2",
+					"label": "Key_PoP"
+				}, {
+					"value": "3",
+					"label": "Key_Jazz"
+				}, {
+					"value": "4",
+					"label": "Key_Classic"
+				}, {
+					"value": "5",
+					"label": "Key_Blues"
+				}, {
+					"value": "6",
+					"label": "Key_Country"
+				}
+			],
+			"hidden": false
+		}, {
+			"index": "Year",
+			"name": "Year",
+			"resourceName": "Key_Year",
+			"width": 94,
+			"displayOrder": 4,
+			"sorttype": "int",
+			"sortCriteria": null,
+			"filterCriteria": {
+				"filter": {
+					"value": 1990
+				},
+				"filterOperator": "GREATERTHAN",
+				"filterOrder": 2
+			},
+			"hideSlider": true,
+			"hidden": false
+		}, {
+			"index": "Album",
+			"name": "Album",
+			"resourceName": "Key_Album",
+			"width": 220,
+			"displayOrder": 5,
+			"sorttype": "text",
+			"sortCriteria": {
+				"sortOrder": 2,
+				"sortDirection": "desc"
+			},
+			"filterCriteria": null,
+			"hidden": false
+		}, {
+			"index": "Progress",
+			"name": "Progress",
+			"resourceName": "Key_Progress",
+			"width": 238,
+			"displayOrder": 6,
+			"sorttype": "number",
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"filterMin": 0.0, "filterMax": 10.0,
+			"hidden": false
+		}, {
+			"index": "group1",
+			"name": "group1",
+			"resourceName": "Key_Group",
+			"displayOrder": 7,
+			"hidden": false,
+			"type": "parent",
+			"children": [
+				{
+					"parent": "group1",
+					"index": "Length",
+					"name": "Length",
+					"resourceName": "Key_Length",
+					"width": 129,
+					"displayOrder": 1,
+					"sorttype": "number",
+					"filterMin": 0.0, "filterMax": 10.0,
+					"formatter":"float",
+					"formatoptions":{"decimalPlaces": 2},
+					"sortCriteria": null,
+					"filterCriteria": null,
+					"hidden": false
+				}, {
+					"parent": "group1",
+					"index": "Track",
+					"name": "Track",
+					"resourceName": "Key_Track",
+					"width": 128,
+					"displayOrder": 2,
+					"sorttype": "int",
+					"filterMin": 0, "filterMax": 10,
+					"sortCriteria": null,
+					"filterCriteria": null,
+					"hidden": false
+				}, {
+					"parent": "group1",
+					"index": "Composer",
+					"name": "Composer",
+					"resourceName": "Key_Composer",
+					"width": 160,
+					"displayOrder": 3,
+					"sorttype": "text",
+					"sortCriteria": null,
+					"filterCriteria": null,
+					"hidden": true
+				}
+			],
+			"sortCriteria": null,
+			"filterCriteria": null
+		}, {
+			"index": "Download Date",
+			"name": "Download Date",
+			"resourceName": "Key_DownloadDate",
+			"width": 160,
+			"displayOrder": 8,
+			"sorttype": "date",
+			"formatter": "date",
+			"formatoptions":{"newformat": "m/d/Y"},
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"hidden": true
+		}, {
+			"index": "Heard",
+			"name": "Heard",
+			"resourceName": "Key_Heard",
+			"width": 73,
+			"displayOrder": 9,
+			"sorttype": "boolean",
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"filterOptions": [
+				{
+					"value": "false",
+					"label": "Key_False"
+				}, {
+					"value": "true",
+					"label": "Key_True"
+				}
+			],
+			"hidden": true
+		}, {
+			"index": "id",
+			"name": "id",
+			"resourceName": "Key_Identity",
+			"width": 80,
+			"displayOrder": 10,
+			"sorttype": "enumcsv",
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"hidden": true
+		}, {
+			"index": "Last Played",
+			"name": "Last Played",
+			"resourceName": "Key_LastPlayed",
+			"width": 120,
+			"displayOrder": 11,
+			"sorttype": "text",
+			"sortCriteria": null,
+			"filterCriteria": null,
+			"hidden": true
+		}
+	]
+}

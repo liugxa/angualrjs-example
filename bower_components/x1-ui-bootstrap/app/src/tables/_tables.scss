@@ -1,0 +1,76 @@
+//
+// Tables
+// --------------------------------------------------
+
+caption {
+	padding-bottom: 10px;
+}
+
+// Baseline styles
+.table {
+	margin-bottom: 0;
+
+	// Cells
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				line-height: $table-cell-line-height;
+				border-top: 1px solid $table-border-color;
+				border-right: 2px solid $table-header-border-color;
+			}
+		}
+	}
+	// Heading
+	> thead > tr > th {
+		background-color: $table-header-bg;
+		color: $table-header-color;
+		border-bottom: none;
+		font-weight: bold;
+	}
+	// Body
+	> thead + tbody > tr {
+		&:first-child > th,
+		&:first-child > td {
+			border-top: none;
+		}
+		> th,
+		> td {
+			border-right: 2px solid transparent;
+		}
+	}
+}
+
+// Condensed table
+.table-condensed {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				font-size: $table-condensed-cell-font-size;
+				line-height: $table-condensed-cell-line-height;
+			}
+		}
+	}
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+	> thead,
+	> tbody,
+	> tfoot {
+		> tr {
+			> th,
+			> td {
+				border-top-color: transparent;
+			}
+		}
+	}
+}

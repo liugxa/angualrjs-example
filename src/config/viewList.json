@@ -1,0 +1,13 @@
+[
+	{
+		"id": "default",
+		"name": "Default View",
+		"companyView": false,
+		"selected": false
+	}, {
+		"id": "ng-table",
+		"name": "Table View",
+		"companyView": false,
+		"selected": false
+	}
+]

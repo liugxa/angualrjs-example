@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * slider.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-slider.x1-slider-as-toggle.toggle-on .noUi-base:before {
+  font-family: "UX1 Glyphicons";
+  font-size: 16px; }
+
+.x1-slider {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: block; }
+  .x1-slider[disabled] .noUi-handle:hover,
+  .x1-slider[disabled] .noUi-handle:focus, .x1-slider.disabled .noUi-handle:hover,
+  .x1-slider.disabled .noUi-handle:focus {
+    background-color: #FFFFFF; }
+  .x1-slider .noUi-handle {
+    width: 15px;
+    height: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 50%;
+    border-color: #4178BE; }
+    .x1-slider .noUi-handle:after, .x1-slider .noUi-handle:before {
+      content: none; }
+    .x1-slider .noUi-handle:hover, .x1-slider .noUi-handle:focus {
+      background-color: #eef4fe; }
+  .x1-slider .noUi-connect {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #4178BE; }
+  .x1-slider .noUi-background {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-color: #FFFFFF; }
+  .x1-slider .x1-slider-tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #4178BE;
+    background-color: #FFFFFF;
+    padding: 2px 5px;
+    min-width: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #5A5A5A; }
+    .x1-slider .x1-slider-tooltip .arrow {
+      position: absolute;
+      overflow: hidden; }
+      .x1-slider .x1-slider-tooltip .arrow:after {
+        width: 22.5px;
+        height: 22.5px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border: 1px solid #4178BE;
+        background-color: #FFFFFF;
+        position: absolute;
+        content: ""; }
+  .x1-slider.noUi-horizontal {
+    width: 300px;
+    height: 7px;
+    margin: 30px 10px; }
+    .x1-slider.noUi-horizontal .noUi-handle {
+      left: -7.5px; }
+    .x1-slider.noUi-horizontal .noUi-pips-horizontal {
+      padding: 3px 0; }
+    .x1-slider.noUi-horizontal .noUi-marker-horizontal.noUi-marker-large {
+      height: 5px; }
+    .x1-slider.noUi-horizontal .noUi-value-horizontal {
+      padding-top: 8px; }
+    .x1-slider.noUi-horizontal .x1-slider-tooltip {
+      top: -30px;
+      left: -19px; }
+      .x1-slider.noUi-horizontal .x1-slider-tooltip .arrow {
+        width: 70px;
+        height: 16px;
+        margin-left: -35px;
+        left: 50%;
+        bottom: -15.99px; }
+        .x1-slider.noUi-horizontal .x1-slider-tooltip .arrow:after {
+          top: -22px;
+          left: 24px; }
+  .x1-slider.noUi-vertical {
+    width: 7px;
+    height: 300px;
+    margin: 10px 30px 10px 60px; }
+    .x1-slider.noUi-vertical .noUi-handle {
+      top: -7.5px; }
+    .x1-slider.noUi-vertical .noUi-pips-vertical {
+      padding: 0 3px; }
+    .x1-slider.noUi-vertical .noUi-marker-vertical.noUi-marker-large {
+      width: 5px; }
+    .x1-slider.noUi-vertical .noUi-value-vertical {
+      margin: -6px 10px 0 10px; }
+    .x1-slider.noUi-vertical .x1-slider-tooltip {
+      top: -6px;
+      left: -57px; }
+      .x1-slider.noUi-vertical .x1-slider-tooltip .arrow {
+        width: 16px;
+        height: 70px;
+        margin-top: -35px;
+        top: 50%;
+        right: -15.99px; }
+        .x1-slider.noUi-vertical .x1-slider-tooltip .arrow:after {
+          top: 24px;
+          left: -22px; }
+
+.x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal {
+  border: 1px solid #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal.noUi-connect {
+    border: 1px solid #4178BE; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal .noUi-marker {
+    background-color: #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal .noUi-value {
+    color: #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal .noUi-handle {
+    top: -4.5px; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal .noUi-connect, .x1-slider.x1-slider-night-mode.noUi-target.noUi-horizontal .noUi-background {
+    height: 7px;
+    top: -1px; }
+
+.x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical {
+  border: 1px solid #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical .noUi-marker {
+    background-color: #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical .noUi-value {
+    color: #FFFFFF; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical .noUi-handle {
+    left: -4.5px; }
+  .x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical .noUi-connect, .x1-slider.x1-slider-night-mode.noUi-target.noUi-vertical .noUi-background {
+    width: 7px;
+    left: -1px; }
+
+.x1-slider.x1-slider-as-toggle {
+  width: 65px;
+  height: 30px;
+  border-radius: 30px;
+  border: none; }
+  .x1-slider.x1-slider-as-toggle.noUi-state-tap .noUi-origin {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none; }
+  .x1-slider.x1-slider-as-toggle.toggle-on {
+    background-color: #4178BE; }
+    .x1-slider.x1-slider-as-toggle.toggle-on .noUi-base:before {
+      content: "";
+      font-weight: bold;
+      margin-left: 13px;
+      line-height: 30px;
+      color: #FFFFFF; }
+    .x1-slider.x1-slider-as-toggle.toggle-on .noUi-handle {
+      right: 25px;
+      left: auto; }
+  .x1-slider.x1-slider-as-toggle.toggle-off {
+    background-color: #777677; }
+    .x1-slider.x1-slider-as-toggle.toggle-off .noUi-handle {
+      left: 5px; }
+  .x1-slider.x1-slider-as-toggle .noUi-handle {
+    width: 20px;
+    height: 20px;
+    border: none;
+    top: 5px; }
+  .x1-slider.x1-slider-as-toggle[disabled] {
+    background-color: #C7C7C7;
+    cursor: not-allowed; }

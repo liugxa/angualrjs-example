@@ -1,0 +1,24 @@
+{
+  "name": "ng-table",
+  "description": "A starter project for AngularJS",
+  "version": "0.0.0",
+  "homepage": "https://github.com/angular/angular-phonecat",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+	"angular-route": "1.4.10",
+    "x1-ui-ng-grid-preference": "0.9.2",
+	"x1-ui-ng-searchbar": "2.0.3"
+  },
+  "resolutions": {
+    "angular-moment": "0.10.2",
+	"angular-aria": "1.4.10",
+	"angular": "1.4.10",
+	"angular-sanitize": "1.4.10",
+    "x1-ui-bootstrap": "3.6.1",
+	"moment": "2.10.6",
+	"x1-ui-ng-popover": "2.0.10",
+	"x1-ui-ng-tooltip": "2.0.14",
+	"x1-ui-ng-utils": "1.1.0"
+  }
+}

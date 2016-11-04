@@ -1,0 +1,25 @@
+@import "../../src/x1-ui-sass-tools";
+
+.bs-colors {
+	display: table;
+
+	.color-swatch {
+		display: table;
+		margin: 5px;
+
+		&:nth-child(7) {
+			clear: left;
+		}
+		&.text-light {
+			color: $white;
+		}
+		&.text-dark {
+			color: $black;
+		}
+		.color-text {
+			vertical-align: middle;
+			text-align: center;
+			display: table-cell;
+		}
+	}
+}

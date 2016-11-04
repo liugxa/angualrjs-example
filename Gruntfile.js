@@ -1,0 +1,131 @@
+module.exports = function(grunt) {
+
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    concat: {
+      options: {
+        separator: ''
+      },
+      js: {
+        src: [
+			'./bower_components/angular/angular.js',
+			'./bower_components/angular-animate/angular-animate.js',
+			'./bower_components/angular-aria/angular-aria.js',
+			'./bower_components/angular-bootstrap/ui-bootstrap.js',
+			'./bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+			'./bower_components/angular-moment/angular-moment.js',
+			'./bower_components/angular-route/angular-route.js',
+			'./bower_components/angular-sanitize/angular-sanitize.js',
+			'./bower_components/angular-translate/angular-translate.js',
+			'./bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
+			'./bower_components/angular-tree-control/angular-tree-control.js',
+			
+			'./bower_components/jquery/dist/jquery.js',
+			'./bower_components/jquery-ui/jquery-ui.js',
+			'./bower_components/free-jqgrid/dist/jquery.jqgrid.src.js',
+			'./bower_components/moment/moment.js',
+			'./bower_components/nouislider/distribute/nouislider.js',
+			
+			'./bower_components/x1-ui-ng-calendar-core/dist/x1-ui-ng-calendar-core.js',
+			'./bower_components/x1-ui-ng-grid-preference/dist/x1-ui-ng-grid-preference.js',
+			'./bower_components/x1-ui-ng-jqgrid/dist/x1-ui-ng-jqgrid.js',
+			'./bower_components/x1-ui-ng-modal/dist/x1-ui-ng-modal.js',
+			'./bower_components/x1-ui-ng-popover/dist/x1-ui-ng-popover.js',
+			'./bower_components/x1-ui-ng-select/dist/x1-ui-ng-select.js',
+			'./bower_components/x1-ui-ng-slider/dist/x1-ui-ng-slider.js',
+			'./bower_components/x1-ui-ng-tabs/dist/x1-ui-ng-tabs.js',
+			'./bower_components/x1-ui-ng-tooltip/dist/x1-ui-ng-tooltip.js',
+			'./bower_components/x1-ui-ng-utils/dist/x1-ui-ng-utils.js',
+			'./bower_components/x1-ui-ng-searchbar/dist/x1-ui-ng-searchbar.js',
+			
+			'./src/js/ng-table-configure.js',
+			'./src/js/ng-table-templates.js',
+			'./src/js/services/ng-table-services-local.js',
+			'./src/js/controllers/ng-table-filter.js',
+			'./src/js/controllers/ng-table-normal.js',
+			'./src/js/controllers/ng-table-preference.js',
+			'./src/js/controllers/ng-table-search.js',
+			'./src/js/controllers/ng-table-search-table.js',
+			'./src/js/controllers/ng-table-model.js',			
+		],
+        dest: 'dist/js/<%= pkg.name %>.js'
+      },
+      css: {
+        src: [
+			'./bower_components/x1-ui-bootstrap/dist/x1-ui-bootstrap.css',
+			'./bower_components/x1-ui-ng-jqgrid/dist/x1-ui-ng-jqgrid.css',
+			'./bower_components/x1-ui-ng-popover/dist/x1-ui-ng-popover.css',
+			'./bower_components/x1-ui-ng-select/dist/x1-ui-ng-select.css',
+			'./bower_components/x1-ui-ng-slider/dist/x1-ui-ng-slider.css',
+			'./bower_components/x1-ui-ng-tooltip/dist/x1-ui-ng-tooltip.css',
+			'./bower_components/x1-ui-ng-grid-preference/dist/x1-ui-ng-grid-preference.css',
+
+			'./bower_components/free-jqgrid/css/ui.jqgrid.css',
+			'./bower_components/nouislider/distribute/nouislider.css',
+						
+			'./src/css/workload-style.css',
+		],
+		dest: 'dist/css/<%= pkg.name %>.css'
+	  }	  
+    },
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+      },
+      dest: {
+        files: {
+          'dist/<%= pkg.name %>.min.js': ['<%= concat.js.dest %>']
+        }
+      }
+    },
+    qunit: {
+      files: ['test/**/*.html']
+    },
+    jshint: {
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+      options: {
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true,
+          document: true
+        }
+      }
+    },
+    watch: {
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js', 'src/**/*.html'],
+      tasks: ['concat', 'copy']
+    },
+	copy: {
+	  main: {
+		files: [
+		  // includes files within path and its sub-directories
+		  {expand: true, cwd: 'src', src: ['config/**'], dest: 'dist/'},
+		  {expand: true, cwd: 'src', src: ['routes/**'], dest: 'dist/'},
+		  {expand: true, cwd: 'src', src: ['i18n/**'], dest: 'dist/'},
+		  
+		  // includes single files
+		  {expand: true, cwd: 'src/', src: ['*.html'], dest: 'dist/'},
+		],
+	  },
+	  publish: {
+		expand: true,
+		cwd: 'dist',
+		src: '**',
+		dest: 'Z:\\scratch.gliu\\pac10.1\\pac-3\\gui\\3.0\\wlp\\usr\\servers\\platform\\apps\\platform.war\\pac\\ngtable',
+	  },	  
+	}
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  
+  grunt.registerTask('dev', ['concat', 'copy', 'watch']);
+  grunt.registerTask('test', ['jshint', 'qunit']);
+  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+
+};

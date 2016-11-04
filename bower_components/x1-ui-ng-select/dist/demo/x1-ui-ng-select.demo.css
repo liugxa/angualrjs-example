@@ -1,0 +1,19 @@
+pre {
+  max-height: 300px; }
+
+.nav-demo {
+  height: 500px; }
+
+.nav-demo-btn {
+  margin: 10px; }
+
+.x1-select {
+  width: 450px; }
+
+.test {
+  float: left;
+  width: 33%; }
+
+.overflow-example {
+  overflow: auto;
+  height: 200px; }

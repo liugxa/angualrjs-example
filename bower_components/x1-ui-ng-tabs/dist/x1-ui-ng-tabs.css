@@ -1,0 +1,192 @@
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.mixins.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.mixins.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+.x1-ui-tabs-list.nav-tabs .nav-tab.closable .tab-close, .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu .closable .tab-close {
+  line-height: 36px;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 0; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab.closable .tab-close:hover span, .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu .closable .tab-close:hover span, .x1-ui-tabs-list.nav-tabs .nav-tab.closable .tab-close:focus span, .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu .closable .tab-close:focus span {
+    color: #4178BE; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab.closable .tab-close span, .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu .closable .tab-close span {
+    font-size: 10px; }
+
+.x1-ui-tabs-content.tab-content {
+  background-color: #efefef;
+  padding: 20px; }
+
+.x1-ui-tabs-list.nav-tabs.bottom {
+  margin-bottom: 0;
+  margin-top: 0; }
+  .x1-ui-tabs-list.nav-tabs.bottom > li.active > a,
+  .x1-ui-tabs-list.nav-tabs.bottom > li.active > h3 a {
+    border-top-color: #4178BE; }
+  .x1-ui-tabs-list.nav-tabs.bottom > li.edit-mode .tab-edit {
+    top: 10px; }
+  .x1-ui-tabs-list.nav-tabs.bottom > li > h3 a,
+  .x1-ui-tabs-list.nav-tabs.bottom > li > a {
+    border-top: 2px solid transparent;
+    border-bottom: none; }
+    .x1-ui-tabs-list.nav-tabs.bottom > li > h3 a:hover, .x1-ui-tabs-list.nav-tabs.bottom > li > h3 a:focus,
+    .x1-ui-tabs-list.nav-tabs.bottom > li > a:hover,
+    .x1-ui-tabs-list.nav-tabs.bottom > li > a:focus {
+      border-top: 2px solid #4178BE; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.with-info .info-popover-button {
+  line-height: 36px;
+  text-decoration: none;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 1; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab.with-info .info-popover-button:hover span,
+  .x1-ui-tabs-list.nav-tabs .nav-tab.with-info .info-popover-button:focus span {
+    color: #4178BE; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.with-info > h3 a {
+  padding-right: 34px; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode {
+  width: 100px; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode .tab-edit {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    padding: 0 10px;
+    top: 10px; }
+    .x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode .tab-edit .form-control {
+      padding-right: 25px; }
+    .x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode .tab-edit button {
+      text-decoration: none;
+      position: absolute;
+      line-height: 26px;
+      right: 15px;
+      top: -4px; }
+      .x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode .tab-edit button:hover {
+        font-weight: bold; }
+      .x1-ui-tabs-list.nav-tabs .nav-tab.edit-mode .tab-edit button span {
+        color: #4178BE; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.closable.with-info .info-popover-button {
+  right: 30px; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.closable.with-info > h3 a {
+  padding-right: 54px; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab.closable > h3 a {
+  padding-right: 34px; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab-add > a {
+  line-height: 34px; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab-hidden > a.glyphicon {
+  background-color: #FFFFFF;
+  color: #777677; }
+
+.x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu {
+  right: -1px;
+  left: auto; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu.left-align {
+    left: -1px;
+    right: auto; }
+  .x1-ui-tabs-list.nav-tabs .nav-tab-hidden .dropdown-menu .closable {
+    position: relative; }
+
+.x1-ui-tabs-popover.popover {
+  word-wrap: break-word; }
+  .x1-ui-tabs-popover.popover p {
+    margin-bottom: 20px; }
+    .x1-ui-tabs-popover.popover p:last-child {
+      margin: 0; }
+    .x1-ui-tabs-popover.popover p span {
+      display: block; }
+      .x1-ui-tabs-popover.popover p span + span {
+        margin-left: 85px; }
+
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/

@@ -1,0 +1,41 @@
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+[dir="rtl"] .x1-select .main-control .list-option .option-icon {
+  margin: 5px 10px 0 8px; }
+
+[dir="rtl"] .x1-select .main-control .list-option .unselect-icon {
+  margin: 5px 20px 0 10px; }
+
+[dir="rtl"] .x1-select .main-control .arrow-button {
+  border-left: none;
+  border-right: 1px solid #AEAEAE; }
+
+[dir="rtl"] .x1-select .list-options .list-option.active {
+  border-left: none;
+  border-right: 3px solid #00a6a0; }
+  [dir="rtl"] .x1-select .list-options .list-option.active:hover {
+    border-left: none;
+    border-right: 3px solid #00a6a0; }
+
+[dir="rtl"] .x1-select .list-options .list-option .option-icon {
+  margin: 8px 10px 0 8px; }
+
+[dir="rtl"] .x1-select .list-options .divider-up {
+  border-top: 1px solid #AEAEAE; }
+  [dir="rtl"] .x1-select .list-options .divider-up:hover {
+    border-top: 1px solid #AEAEAE; }
+
+[dir="rtl"] .x1-select .list-options .divider-down {
+  border-bottom: 1px solid #AEAEAE; }
+  [dir="rtl"] .x1-select .list-options .divider-down:hover {
+    border-bottom: 1px solid #AEAEAE; }
+
+[dir="rtl"] .x1-select .selected-list-options .list-option .option-icon {
+  margin: 5px 10px 0 8px; }
+
+[dir="rtl"] .x1-select .selected-list-options .list-option .unselect-icon {
+  margin: 5px 20px 0 10px; }

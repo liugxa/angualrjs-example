@@ -1,0 +1,49 @@
+<div ng-controller="ngTablePreference">
+	<div class="row">
+		<div class="col-md-8"><span></span></div>
+		<div class="col-md-4">
+			<a role="button" type="button" class="btn btn-md pull-right">
+				<x1-view-dropdown grid-id="gridId" placement="placement"></x1-view-dropdown>
+			</a>
+		</div>
+	</div>
+	<div class="filter-summary filter-on">
+		<div class="row" ng-show="isShowFilters">
+			<div class="col-md-9" ng-switch="isApplyFilters">
+				<div class="col-md-10 filter-tags" ng-switch-when="true">
+					<a href="javascript:void(0);" class="edit-tag">{{totalRows}} items found: Filter (Ened:{{viewName}})</a>
+				</div>			
+				<div class="col-md-10" ng-switch-when="false">
+					No columns are filtered. Create filters from the column headers.
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-10">
+						<button ng-show="isApplyFilters == true" class="view-drop-button ng-scope" type="button" ng-click="applyFilters()">
+							<span class="glyphicon glyphicon-star"></span>
+						</button>
+						<button ng-show="isApplyFilters == false" class="view-drop-button ng-scope" type="button" ng-click="applyFilters()">
+							<span class="glyphicon glyphicon-star-empty"></span>
+						</button>							
+						<button class="view-drop-button ng-scope" type="button" ng-click="resetFilters()">
+							<span class="glyphicon glyphicon-trash"></span>
+						</button>
+						<button class="view-drop-button ng-scope" type="button" ng-click="showColumns()">
+							<span class="glyphicon glyphicon-property"></span>
+						</button>						
+						<button class="view-drop-button ng-scope" type="button" ng-click="showFilters()">
+							<span class="glyphicon glyphicon-remove"></span>
+						</button>
+						<button class="view-drop-button ng-scope" type="button" ng-click="filterClearAll()">
+							<span class="glyphicon glyphicon-x-circle"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<x1-grid-preference grid-id="gridId" service="service" view-id="viewId" grid-service="gridService"></x1-grid-preference>	
+</div>
+

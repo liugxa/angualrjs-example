@@ -1,0 +1,105 @@
+//
+// Pager pagination
+// --------------------------------------------------
+
+.pager {
+	padding-left: 0;
+	margin: $line-height-computed 0;
+	list-style: none;
+	text-align: center;
+
+	li {
+		> a,
+		> span {
+			line-height: $pager-height;
+			color: $pagination-color;
+			font-size: $font-size-h4;
+			font-weight: $font-weight-bold;
+			padding: 0 20px;
+			border: none;
+
+			.glyphicon {
+				color: $pagination-color;
+				font-size: 28px;
+			}
+		}
+	}
+
+	.next > a span:first-child,
+	.next > span span:first-child,
+	.previous > a span:last-child,
+	.previous > span span:last-child {
+		border-bottom: 1px solid transparent;
+	}
+	.next > a:hover span:first-child,
+	.next > a:focus span:first-child,
+	.previous > a:hover span:last-child,
+	.previous > a:focus span:last-child {
+		border-color: $pagination-hover-color;
+	}
+
+	.next {
+		> a,
+		> span {
+			.glyphicon {
+				padding-left: 14px;
+				float: right;
+			}
+		}
+	}
+
+	.previous {
+		> a,
+		> span {
+			.glyphicon {
+				padding-right: 14px;
+				float: left;
+			}
+		}
+	}
+
+	.disabled {
+		> a,
+		> a:hover,
+		> a:focus,
+		> span {
+			span {
+				border: none;
+			}
+			.glyphicon {
+				color: $pager-disabled-color;
+			}
+		}
+	}
+}
+
+.pager.pager-white {
+	li {
+		> a,
+		> span {
+			color: $white;
+
+			.glyphicon {
+				color: $white;
+			}
+		}
+	}
+	.next > a:hover span:first-child,
+	.next > a:focus span:first-child,
+	.previous > a:hover span:last-child,
+	.previous > a:focus span:last-child {
+		border-color: $white;
+	}
+	.disabled {
+		> a,
+		> a:hover,
+		> a:focus,
+		> span {
+			color: $pager-disabled-color;
+
+			.glyphicon {
+				color: $pager-disabled-color;
+			}
+		}
+	}
+}

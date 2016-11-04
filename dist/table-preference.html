@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Peretz Angular jqGrid Demo</title>
+		<link rel="stylesheet" href="./css/ng-table.css">
+	</head>
+<body>
+	<script src="./js/ng-table.js"></script>
+	<div ng-app="ngRouteExample" style="width:80%">
+		<div ng-controller="ngTablePreference">
+			<div class="row">
+				<div class="col-md-8"><span></span></div>
+				<div class="col-md-4">
+					<a role="button" type="button" class="btn btn-md pull-right">
+						<x1-view-dropdown grid-id="gridId" placement="placement"></x1-view-dropdown>
+					</a>
+				</div>
+			</div>
+			<div class="filter-summary filter-on">
+				<div class="row" ng-show="isShowFilters">
+					<div class="col-md-8" ng-switch="isApplyFilters">
+						<div class="col-md-12" ng-switch-when="true">
+							<div class="filter-tags" ng-repeat="f in getFilters().rules">
+								<a href="javascript:void(0);" class="edit-tag">
+									{{f.field}} = {{f.data}}
+								</a>
+							</div>
+						</div>			
+						<div class="col-md-12" ng-switch-when="false">
+							No columns are filtered. Create filters from the column headers.
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-2"></div>
+							<div class="col-md-10">
+								<button ng-show="isApplyFilters == true" class="view-drop-button ng-scope" type="button" ng-click="applyFilters()">
+									<span class="glyphicon glyphicon-star"></span>
+								</button>
+								<button ng-show="isApplyFilters == false" class="view-drop-button ng-scope" type="button" ng-click="applyFilters()">
+									<span class="glyphicon glyphicon-star-empty"></span>
+								</button>							
+								<button class="view-drop-button ng-scope" type="button" ng-click="resetFilters()">
+									<span class="glyphicon glyphicon-trash"></span>
+								</button>
+								<button class="view-drop-button ng-scope" type="button" ng-click="showColumns()">
+									<span class="glyphicon glyphicon-property"></span>
+								</button>						
+								<button class="view-drop-button ng-scope" type="button" ng-click="showFilters()">
+									<span class="glyphicon glyphicon-remove"></span>
+								</button>
+								<button class="view-drop-button ng-scope" type="button" ng-click="savePreferences()">
+									<span class="glyphicon glyphicon-ok-circle"></span>
+								</button>
+								<button class="view-drop-button ng-scope" type="button" ng-click="clearPreference()">
+									<span class="glyphicon glyphicon-x-circle"></span>
+								</button>
+								<button class="view-drop-button ng-scope" type="button" ng-click="showGridFilters()">
+									<span class="glyphicon glyphicon-info-circle"></span>
+								</button>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<x1-grid-preference grid-id="gridId" service="service" view-id="viewId" grid-service="gridService"></x1-grid-preference>	
+		</div>
+	</div>	
+</body>
+</html>

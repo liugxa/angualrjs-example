@@ -1,0 +1,21 @@
+[
+	{
+		"id": 1,
+		"parentViewId": 1,
+		"name": "Company View 1",
+		"companyView": true,
+		"selected": true
+	}, {
+		"id": 2,
+		"parentViewId": 1,
+		"name": "Custom View 1",
+		"companyView": false,
+		"selected": false
+	}, {
+		"id": 3,
+		"parentViewId": 1,
+		"name": "Custom View 2",
+		"companyView": false,
+		"selected": false
+	}
+]

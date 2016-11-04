@@ -1,0 +1,14 @@
+<div ng-controller="ngTableSearch">
+	<x1-searchbar input="mockData" output="outputData2" options="options2"></x1-searchbar>
+	<table class="table table-condensed">
+		<thead>
+		<tr><th>Name</th><th>Phone</th></tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="item in outputData2">
+			<td>{{item.name}}</td>
+			<td>{{item.phone}}</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

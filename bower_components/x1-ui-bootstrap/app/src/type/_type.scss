@@ -1,0 +1,140 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+
+.giant {
+	font-family: $giant-font-family;
+	font-size: $font-size-giant;
+	color: $giant-color;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	margin-top: $headings-margin-top;
+	margin-bottom: $headings-margin-bottom;
+}
+
+h1, .h1 {
+	font-family: $font-family-h1;
+	line-height: $line-height-h1;
+	font-weight: $font-weight-h1;
+	font-size: $font-size-h1;
+}
+h2, .h2 {
+	font-family: $font-family-h2;
+	line-height: $line-height-h2;
+	font-weight: $font-weight-h2;
+	font-size: $font-size-h2;
+}
+h3, .h3 {
+	font-family: $font-family-h3;
+	line-height: $line-height-h3;
+	font-weight: $font-weight-h3;
+	font-size: $font-size-h3;
+}
+h4, .h4 {
+	font-family: $font-family-h4;
+	line-height: $line-height-h4;
+	font-weight: $font-weight-h4;
+	font-size: $font-size-h4;
+}
+h5, .h5 {
+	font-family: $font-family-h5;
+	line-height: $line-height-h5;
+	font-weight: $font-weight-h5;
+	font-size: $font-size-h5;
+}
+h6, .h6 {
+	font-family: $font-family-h6;
+	line-height: $line-height-h6;
+	font-weight: $font-weight-h6;
+	font-size: $font-size-h6;
+}
+
+// Body text
+// -------------------------
+
+p {
+	margin: 0 0 10px;
+
+	&:last-child {
+		margin: 0;
+	}
+}
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: (11px ex-small font / 12px small font / 14px base font) * 100% = about 85%
+small,
+.small {
+	font-size: $font-size-small;
+	line-height: $font-size-small + 3px;
+}
+
+.xs-small {
+	font-size: $font-size-xs;
+	line-height: $font-size-xs + 3px;
+}
+
+mark,
+.mark {
+	padding: 2px;
+}
+
+.disabled {
+	color: $text-disabled;
+}
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+
+@include com-text-emphasis-variant('.bg-primary', $state-context-default, $state-brand-bg, $state-brand-border);
+
+@include com-text-emphasis-variant('.bg-success', $state-context-default, $state-success-bg, $state-success-border);
+
+@include com-text-emphasis-variant('.bg-info', $state-context-default, $state-info-bg, $state-info-border);
+
+@include com-text-emphasis-variant('.bg-warning', $state-context-default, $state-warning-bg, $state-warning-border);
+
+@include com-text-emphasis-variant('.bg-danger', $state-context-default, $state-danger-bg, $state-danger-border);
+
+// Page header
+// -------------------------
+
+.page-header {
+	padding-bottom: 0;
+	margin: 13px 0 $headings-margin-bottom;
+	line-height: 44px;
+}
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+	margin: 10px;
+
+	ul,
+	ol {
+		margin: 10px;
+	}
+}
+
+// Description Lists
+dl {
+	margin: 0;
+}
+dt {
+	font-size: $font-size-h4;
+	font-weight: 700;
+}

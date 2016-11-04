@@ -1,0 +1,21 @@
+@mixin x1-ui-transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	-o-transform: $transforms;
+	transform: $transforms;
+}
+@mixin transform-style($style) {
+	-webkit-transform-style: $style;
+	-moz-transform-style: $style;
+	-ms-transform-style: $style;
+	-o-transform-style: $style;
+	transform-style: $style;
+}

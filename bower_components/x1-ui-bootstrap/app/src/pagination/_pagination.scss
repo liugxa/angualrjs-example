@@ -1,0 +1,74 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+	text-align: center;
+	height: 30px;
+
+	> li {
+		> a,
+		> span {
+			padding: 0;
+			margin: 0 5px;
+			width: 30px;
+			line-height: 28px;
+			background-color: $pagination-bg;
+		}
+		> a span {
+			vertical-align: text-top;
+		}
+		&:first-child {
+			> a,
+			> span {
+				@include square(22px);
+				margin: 4px 3px;
+				line-height: 19px;
+			}
+		}
+		&:last-child {
+			> a,
+			> span {
+				@include square(22px);
+				margin: 4px 3px;
+				line-height: 19px;
+			}
+		}
+		&:first-child,
+		&:last-child {
+			&:hover,
+			&:focus {
+				> a,
+				> span {
+					background-color: $pagination-bg;
+					border-color: $pagination-hover-color;
+				}
+			}
+			.glyphicon {
+				color: $pagination-color;
+			}
+		}
+	}
+
+	> .active > a,
+	> .active > span {
+		font-weight: $font-weight-bold;
+	}
+
+	> .disabled {
+		&:first-child,
+		&:last-child {
+			> span,
+			> span:hover,
+			> span:focus,
+			> a,
+			> a:hover,
+			> a:focus {
+				border-color: $pagination-border;
+
+				.glyphicon {
+					color: $pagination-disabled-color;
+				}
+			}
+		}
+	}
+}

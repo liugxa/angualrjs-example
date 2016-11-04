@@ -1,0 +1,53 @@
+//
+// Input groups
+// --------------------------------------------------
+
+// Base styles
+// -------------------------
+.input-group {
+	.form-control {
+		@include box-shadow(none);
+
+		&:focus,
+		&:hover {
+			@include box-shadow(none);
+			border-color: $input-border-hover;
+			z-index: 3;
+
+			&:hover {
+				@include box-shadow(none);
+				border-color: $input-border-hover;
+			}
+		}
+	}
+}
+
+// Button input groups
+// -------------------------
+.input-group-btn {
+	> .btn {
+		border: 1px solid $input-group-addon-border-color;
+		background-color: $input-bg;
+		padding: 0 10px;
+
+		.glyphicon {
+			color: $icon;
+		}
+		// Bring the "active" button to the front
+		&:hover,
+		&:focus {
+			background-color: $input-group-addon-bg-hover;
+			z-index: 1;
+		}
+		&:active,
+		&.active {
+			background-color: $btn-primary-bg;
+			border-color: $btn-primary-border;
+			z-index: 2;
+
+			.glyphicon {
+				color: $btn-primary-color;
+			}
+		}
+	}
+}

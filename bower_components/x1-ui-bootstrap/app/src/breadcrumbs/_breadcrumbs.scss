@@ -1,0 +1,28 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb {
+	> li {
+		font-family: $font-family-h5;
+		line-height: 44px;
+
+		&:first-child {
+			font-size: $font-size-h3;
+		}
+		* {
+			color: $breadcrumb-color;
+		}
+		+ li:before {
+			@extend .glyphicon;
+			@extend .glyphicon-xs;
+			content: $glyphicon-chevron-right;
+			position: relative;
+			top: 1px;
+		}
+	}
+	> .active {
+		font-family: $font-family-h3;
+		font-weight: $font-weight-bold;
+	}
+}

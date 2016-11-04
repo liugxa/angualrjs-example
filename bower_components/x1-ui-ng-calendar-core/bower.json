@@ -1,0 +1,55 @@
+{
+  "name": "x1-ui-ng-calendar-core",
+  "version": "2.1.5",
+  "authors": [
+    "IBM"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-moment": "~0.8.3",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "moment": "~2.10.6",
+    "x1-ui-bootstrap": "3.0.1"
+  },
+  "main": [
+    "dist/x1-ui-ng-calendar-core.min.css",
+    "dist/x1-ui-ng-calendar-core.min.js"
+  ],
+  "ignore": [
+    "app/demo",
+    "bower_components",
+    "node_modules",
+    ".gitignore",
+    ".jshintrc",
+    "package.json",
+    "csslintrc.json",
+    "gulpfile.js"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.3",
+    "angular-bootstrap": "~0.12.1",
+    "angular-ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.15",
+    "prism": "gh-pages",
+    "x1-ui-ng-demo-generator": "^2.0.2"
+  },
+  "resolutions": {
+    "angular": "~1.3.15",
+    "moment": "~2.10.6",
+    "x1-ui-bootstrap": "3.0.1"
+  },
+  "x1Meta": {
+    "slackUrl": "https://peretz.slack.com/messages/x1-ui-ng-calendr-core/",
+    "repoUrl": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui/x1-ui-ng-calendar-core",
+    "readiness": {
+       "perceivable": "partial",
+       "operable": "partial",
+       "understandable": "partial",
+       "robust": "complete",
+       "translation": "complete",
+       "localization": ""
+     }
+  }
+}

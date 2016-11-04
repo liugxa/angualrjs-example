@@ -1,0 +1,178 @@
+@import 'switches.variables';
+
+.switch-bg-dark {
+	.switch span,
+	.switch-inline span {
+		color: $white;
+	}
+
+	.switch input[type="checkbox"]:not(:disabled),
+	.switch-inline input[type="checkbox"]:not(:disabled) {
+		&:checked + span {
+			background: $blue20;
+		}
+
+		+ span:hover,
+		&:focus + span,
+		&:checked + span:hover,
+		&:checked:focus + span, {
+			background: $blue40-10;
+		}
+
+		+ span {
+			background: $white;
+
+			&:hover {
+				background: $blue40-10;
+			}
+
+			&::after {
+				background: $gray80;
+			}
+			&::before {
+				color: $gray80;
+			}
+		}
+	}
+}
+
+/***************************************************************/
+// These next few blocks mirror .checkbox and .radio counterparts
+
+.switch {
+	margin-bottom: 30px;
+	label {
+		padding: 0;
+	}
+}
+
+.switch-inline,
+.switch-inline + .switch-inline {
+	margin: 10px 0;
+	padding: 0;
+
+	label {
+		margin-right: 0;
+	}
+}
+
+.switch-inline + .switch-inline {
+	margin-left: 20px;
+}
+
+/***************************************************************/
+
+.switch span,
+.switch-inline span {
+	vertical-align: middle;
+}
+
+.switch input[type="checkbox"],
+.switch-inline input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	margin: 0;
+
+	&:first-child + span {
+		margin-left: 0;
+	}
+
+	+ span:last-child {
+		margin-right: 0;
+	}
+
+	&:checked {
+		+ span {
+			padding-left: $switch-width - $switch-padding - $switch-circle;
+			background: $brand-primary;
+		}
+
+		+ span::before {
+			opacity: 1;
+		}
+
+		+ span:hover,
+		&:focus + span {
+			background: $blue60;
+		}
+	}
+
+	+ span:hover,
+	&:focus + span {
+		background: $gray50;
+	}
+
+	&:disabled + span {
+		background: $gray20;
+		cursor: not-allowed;
+
+		&::after {
+			background: $gray30;
+		}
+		&::before {
+			color: $gray30;
+		}
+	}
+
+	&:disabled:hover + span::before,
+	&:disabled:focus + span::before {
+	}
+
+	+ span {
+		@extend .glyphicon;
+
+		text-align: left;
+		display: inline-block;
+		position: relative;
+		height: $switch-height;
+		width: $switch-width;
+		background: $gray40;
+		border-radius: 9999px;
+		padding: $switch-padding;
+		transition: padding $switch-transition, background $switch-transition;
+		margin: 0 10px;
+
+		&::before {
+			position: absolute;
+			left: 13px;
+			top: 1px;
+			line-height: $switch-height; 
+			content: $glyphicon-ok;
+			font-weight: bold;
+			font-size: 18px;
+			color: $white;
+			opacity: 0;
+			transition: opacity $switch-transition;
+		}
+
+		&::after {
+			@include square($switch-circle);
+
+			content: '';
+			display: inline-block;
+			background: $white;
+			border-radius: 9999px;
+		}
+	}
+}
+
+.switch.switch-sm input[type="checkbox"],
+.switch-inline.switch-sm input[type="checkbox"] {
+	&:checked + span {
+		padding-left: $switch-width - $switch-sm-padding - $switch-sm-circle;
+	}
+
+	+ span {
+		height: $switch-sm-height;
+		padding: $switch-sm-padding;
+		transition: padding $switch-transition, background $switch-transition;
+
+		&::before {
+			line-height: $switch-sm-height; 
+		}
+
+		&::after {
+			@include square($switch-sm-circle);
+		}
+	}
+}

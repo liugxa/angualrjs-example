@@ -1,0 +1,11 @@
+.x1-calendar-core-demo .row .nav-tabs {
+  margin-left: -5px; }
+
+.x1-calendar-core-demo .row .bs-example {
+  min-height: 400px; }
+
+.x1-calendar-core-demo .row .tab-content {
+  padding-left: 15px; }
+  .x1-calendar-core-demo .row .tab-content .highlight {
+    max-height: 325px;
+    overflow-y: auto; }

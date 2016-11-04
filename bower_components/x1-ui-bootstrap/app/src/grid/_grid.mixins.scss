@@ -1,0 +1,8 @@
+// Centered container element
+@mixin com-container-fixed($gutter: $container-gutter-width) {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:  $gutter;
+	padding-right: $gutter;
+	@include clearfix;
+}

@@ -1,0 +1,62 @@
+{
+  "name": "x1-ui-ng-modal",
+  "version": "2.0.7",
+  "authors": [
+    "IBM"
+  ],
+  "license": "LicenseRef-LICENSE",
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-translate": "~2.7.2",
+    "x1-ui-bootstrap": "3.3.0"
+  },
+  "main": [
+    "dist/x1-ui-ng-modal.min.css",
+    "dist/x1-ui-ng-modal.min.js"
+  ],
+  "ignore": [
+    "app",
+    "bower_components",
+    "node_modules",
+    ".gitignore",
+    ".jshintrc",
+    "package.json",
+    "csslintrc.json",
+    "gulpfile.js",
+    "karma.conf.js",
+    "protractor.conf.js",
+    "sonar-project.properties"
+  ],
+  "devDependencies": {
+    "angular-translate-loader-static-files": "~2.7.2",
+    "angular-ui-router": "~0.2.13",
+    "angular-mocks": "~1.3.15",
+    "x1-ui-ng-prism": "^1.0.3",
+    "x1-ui-ng-demo-generator": "^2.x"
+  },
+  "resolutions": {
+    "angular": "~1.3.15",
+    "x1-ui-bootstrap": "3.3.0"
+  },
+  "x1Meta": {
+    "repoUrl": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui/x1-ui-ng-modal",
+    "slackUrl": "https://peretz.slack.com/messages/x1-ui-ng-modal/",
+    "readiness": {
+      "perceivable": "partial",
+      "operable": "partial",
+      "understandable": "complete",
+      "robust": "complete",
+      "localization": "",
+      "translation": "complete"
+    }
+  },
+  "_release": "2.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.7",
+    "commit": "95757d4b1d87404f0876736d87c564b1a677c597"
+  },
+  "_source": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui-distribution/bower-x1-ui-ng-modal.git",
+  "_target": "2.0.7",
+  "_originalSource": "x1-ui-ng-modal"
+}

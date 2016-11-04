@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Peretz Angular jqGrid Demo</title>
+		<!-- angular & angular-ui & x1 commerce widget css -->
+		<link rel="stylesheet" href="./bower_components/free-jqgrid/css/ui.jqgrid.css">
+		<link rel="stylesheet" href="./bower_components/nouislider/distribute/nouislider.min.css">
+		
+		<link rel="stylesheet" href="./bower_components/x1-ui-bootstrap/dist/x1-ui-bootstrap.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-jqgrid/dist/x1-ui-ng-jqgrid.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-popover/dist/x1-ui-ng-popover.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-select/dist/x1-ui-ng-select.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-slider/dist/x1-ui-ng-slider.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-tooltip/dist/x1-ui-ng-tooltip.css">
+		<link rel="stylesheet" href="./bower_components/x1-ui-ng-grid-preference/dist/x1-ui-ng-grid-preference.css">
+		
+		<!-- the application css files -->
+		<link rel="stylesheet" href="./css/workload-style.css">
+	</head>
+<body>
+	<!-- angular & angular-ui -->
+	<script src="./bower_components/angular/angular.js"></script>
+	<script src="./bower_components/angular-animate/angular-animate.js"></script>
+	<script src="./bower_components/angular-aria/angular-aria.js"></script>
+	<script src="./bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="./bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+	<script src="./bower_components/angular-moment/angular-moment.js"></script>
+	<script src="./bower_components/angular-route/angular-route.js"></script>
+	<script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="./bower_components/angular-translate/angular-translate.js"></script>
+	<script src="./bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+	<script src="./bower_components/angular-tree-control/angular-tree-control.js"></script>
+	
+	<!-- 3rd party js -->
+	<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="./bower_components/jquery-ui/jquery-ui.js"></script>
+	<script src="./bower_components/free-jqgrid/dist/jquery.jqgrid.src.js"></script>
+	<script src="./bower_components/moment/moment.js"></script>
+	<script src="./bower_components/nouislider/distribute/nouislider.js"></script>
+	
+	
+	<!-- x1 commerce widget js -->
+	<script src="./bower_components/x1-ui-ng-calendar-core/dist/x1-ui-ng-calendar-core.js"></script>
+	<script src="./bower_components/x1-ui-ng-grid-preference/dist/x1-ui-ng-grid-preference.js"></script
+	>
+	<script src="./bower_components/x1-ui-ng-jqgrid/dist/x1-ui-ng-jqgrid.js"></script>
+	<script src="./bower_components/x1-ui-ng-modal/dist/x1-ui-ng-modal.js"></script>
+	<script src="./bower_components/x1-ui-ng-popover/dist/x1-ui-ng-popover.js"></script>
+	<script src="./bower_components/x1-ui-ng-select/dist/x1-ui-ng-select.js"></script>
+	<script src="./bower_components/x1-ui-ng-slider/dist/x1-ui-ng-slider.js"></script>
+	<script src="./bower_components/x1-ui-ng-tabs/dist/x1-ui-ng-tabs.js"></script>
+	<script src="./bower_components/x1-ui-ng-tooltip/dist/x1-ui-ng-tooltip.js"></script>
+	<script src="./bower_components/x1-ui-ng-utils/dist/x1-ui-ng-utils.js"></script>
+	<script src="./bower_components/x1-ui-ng-searchbar/dist/x1-ui-ng-searchbar.js"></script>
+	
+	<div ng-app="ngRouteExample">
+		<table style="width:100%;height:100%">
+			<tr>
+				<td style="width:20%;vertical-align:top">
+					<ol>
+					  <li><a href="#ngTableNormal">Normal Table</a></li>
+					  <li><a href="#ngTableFilter">Table with Filter</a></li>
+					  <li><a href="#ngTablePreference">Table with Preference</a></li>
+					  <li><a href="#ngTableSearch">Normal Table with Search Bar</a></li>
+					  <li><a href="#ngTableSearchTable">jqGrid Table with Search Bar</a></li>
+					  <li><a href="#ngTableModelDialog">model dialog</a></li>
+					</ol>
+				</td>
+				<td >
+				  <div style="width:800px" ng-view></div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<script src="./js/ng-table-configure.js"></script>
+	<script src="./js/ng-table-templates.js"></script>
+	
+	<!-- the special services -->
+	<script src="./js/services/ng-table-services-server.js"></script>
+	
+	<!-- the special controllers -->
+	<script src="./js/controllers/ng-table-filter.js"></script>
+	<script src="./js/controllers/ng-table-normal.js"></script>
+	<script src="./js/controllers/ng-table-preference.js"></script>
+	<script src="./js/controllers/ng-table-search.js"></script>
+	<script src="./js/controllers/ng-table-search-table.js"></script>
+	<script src="./js/controllers/ng-table-model.js"></script>
+</body>
+</html>

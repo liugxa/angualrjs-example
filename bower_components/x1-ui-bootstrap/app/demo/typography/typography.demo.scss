@@ -1,0 +1,22 @@
+@import "../../src/x1-ui-sass-tools";
+
+.bs-typography {
+	.contextual-text {
+		color: $gray50;
+	}
+	.text-link-on-gray {
+		background-color: $gray70;
+		color: $link-color2;
+		padding: 2px 5px;
+	}
+	.icon-on-gray {
+		background-color: $gray80;
+		color: $icon2;
+		padding: 2px 5px;
+	}
+	.disabled-on-gray {
+		background-color: $gray;
+		color: $text-disabled2;
+		padding: 2px 5px;
+	}
+}

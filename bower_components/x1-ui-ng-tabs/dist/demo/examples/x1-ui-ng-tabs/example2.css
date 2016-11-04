@@ -1,0 +1,5 @@
+.x1-ui-tabs-content {
+    height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

@@ -1,0 +1,45 @@
+// Form validation states
+//
+// Used in forms.scss to generate the form validation CSS for warnings, errors, and successes.
+
+@mixin com-form-validation($text-color, $border-color) {
+	// Color the label and help text
+	.help-block,
+	.control-label,
+	.radio,
+	.checkbox,
+	.switch,
+	.radio-inline,
+	.checkbox-inline,
+	.switch-inline,
+	&.radio label,
+	&.checkbox label,
+	&.radio-inline label,
+	&.checkbox-inline label,
+	&.switch-inline label {
+		color: $input-color;
+	}
+	// Set the border and box shadow on specific inputs to match
+	&.radio input[type="radio"] + span::before,
+	&.radio-inline input[type="radio"] + span::before,
+	&.checkbox input[type="checkbox"] + span::before,
+	&.checkbox-inline input[type="checkbox"] + span::before
+	&.switch input[type="checkbox"] + span::before,
+	&.switch-inline input[type="checkbox"] + span::before {
+		@include box-shadow(0 0 0 1px $white, 0 0 0 2px $border-color);
+	}
+	.form-control {
+		@include box-shadow(0 0 0 1px $white, 0 0 0 2px $border-color);
+		border-color: $input-border;
+
+		&:focus,
+		&:hover {
+			@include box-shadow(0 0 0 1px $white, 0 0 0 2px $input-border-hover);
+			border-color: $input-border;
+		}
+	}
+	// Optional feedback icon
+	.form-control-feedback {
+		color: $text-color;
+	}
+}

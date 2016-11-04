@@ -1,0 +1,104 @@
+//
+// Progress bars
+// --------------------------------------------------
+
+// Bar itself
+// -------------------------
+
+// Outer container
+.progress {
+	height: $progress-height;
+	@include box-shadow(none);
+}
+
+// Bar of progress
+.progress-bar {
+	font-size: $font-size-xs;
+	line-height: $progress-height;
+	@include box-shadow(none);
+}
+
+// Variations
+// -------------------------
+
+.progress-bar-teal40 {
+	@include progress-bar-variant($progress-bar-teal40-bg);
+}
+
+.progress-bar-purple {
+	@include progress-bar-variant($progress-bar-purple-bg);
+}
+
+.progress-bar-blue20 {
+	@include progress-bar-variant($progress-bar-blue20-bg);
+}
+
+.progress-bar-magenta {
+	@include progress-bar-variant($progress-bar-magenta-bg);
+}
+
+.progress-bar-orange40 {
+	@include progress-bar-variant($progress-bar-orange40-bg);
+}
+
+.progress-bar-yellow30 {
+	@include progress-bar-variant($progress-bar-yellow30-bg);
+}
+
+.progress-bar-gray30 {
+	@include progress-bar-variant($progress-bar-gray30-bg);
+}
+
+.progress-bar-blue50 {
+	@include progress-bar-variant($progress-bar-blue50-bg);
+}
+
+.progress-bar-magenta70 {
+	@include progress-bar-variant($progress-bar-magenta70-bg);
+}
+
+.progress-bar-orange30 {
+	@include progress-bar-variant($progress-bar-orange30-bg);
+}
+
+.progress-bar-gray10-50 {
+	@include progress-bar-variant($progress-bar-gray10-50-bg);
+}
+
+.progress-bar-blue40 {
+	@include progress-bar-variant($progress-bar-blue40-bg);
+}
+
+.progress-bar-yellow10 {
+	@include progress-bar-variant($progress-bar-yellow10-bg);
+}
+
+.progress-bar-purple40 {
+	@include progress-bar-variant($progress-bar-purple40-bg);
+}
+
+.progress-bar-green30 {
+	@include progress-bar-variant($progress-bar-green30-bg);
+}
+
+.progress-bar-gray40 {
+	@include progress-bar-variant($progress-bar-gray40-bg);
+}
+
+.progress-bar-orange20 {
+	@include progress-bar-variant($progress-bar-orange20-bg);
+}
+
+.progress-bar-blue60 {
+	@include progress-bar-variant($progress-bar-blue60-bg);
+}
+
+.progress-bar-red30 {
+	@include progress-bar-variant($progress-bar-red30-bg);
+}
+
+.progress-bar-warm-gray50 {
+	@include progress-bar-variant($progress-bar-warm-gray50-bg);
+}
+
+

@@ -1,0 +1,15 @@
+@mixin com-close($color: $icon, $line-height: 44px, $font-size: inherit, $right-position: 20px) {
+	button.close {
+		@if $color { line-height: $line-height; }
+		@if $right-position { right: $right-position - 4; }
+
+		&:hover span,
+		&:focus span {
+			@if $color { border-color: $color; }
+		}
+		.glyphicon {
+			@if $font-size { font-size: $font-size; }
+			@if $color { color: $color; }
+		}
+	}
+}

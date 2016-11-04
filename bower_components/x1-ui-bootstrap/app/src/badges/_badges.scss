@@ -1,0 +1,58 @@
+//
+// Badges
+// --------------------------------------------------
+
+
+// Base class
+.badge {
+	font-family: $font-family-1;
+	font-weight: $font-weight-bold;
+	font-size: 10px;
+	padding: 2px 3px;
+	line-height: 13px;
+	min-width: 17px;
+	margin-left: 4px;
+
+	// Quick fix for badges in buttons
+	.btn & {
+		line-height: $btn-default-height - $btn-border-width;
+		float: right;
+		padding: 0;
+		font-size: 11px;
+		text-align: right;
+	}
+
+	.btn-xs &,
+	.btn-group-xs > .btn & {
+		line-height: $btn-sm-height - $btn-border-width;
+		float: right;
+		padding: 0;
+		font-size: 11px;
+		text-align: right;
+	}
+
+	.list-group-item > & {
+		background-color: $brand-primary;
+		margin: 11px 0;
+	}
+}
+
+ul.nav.navbar-nav li a {
+	.badge {
+		position: absolute;
+		right: -8px;
+		top: 2px;
+	}
+}
+.navbar-inverse .navbar-brand {
+	.badge {
+		font-family: $font-family-h6;
+		background-color: $purple60;
+		margin: 10px 0 10px 20px;
+		line-height: 24px;
+		border-radius: 0;
+		padding: 0 10px;
+		font-size: 14px;
+		float: left;
+	}
+}

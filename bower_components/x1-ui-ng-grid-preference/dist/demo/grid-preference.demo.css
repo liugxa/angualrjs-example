@@ -1,0 +1,19 @@
+.demo-name {
+  margin: 0 35px;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 0;
+  color: #FFFFFF;
+  background-color: #323232;
+  border-bottom: 2px solid #008571;
+  border-radius: 3px 3px 0px 0px;
+  line-height: 20px;
+  font-size: 16px; }
+
+.page-container {
+  margin: 15px 35px 50px 35px;
+  height: 550px; }
+
+.grid-container {
+  padding-right: 2px;
+  height: 30px; }

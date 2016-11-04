@@ -1,0 +1,20 @@
+//
+// Glyphicon Placeholders
+// --------------------------------------------------
+%glyphicon { font-family: "UX1 Glyphicons"; font-size: 16px; }
+%glyphicon-xs { font-size: 14px; }
+%glyphicon-sm { font-size: 16px; }
+%glyphicon-md {	font-size: 20px; }
+%glyphicon-lg {	font-size: 30px; }
+
+//
+// Glyphicon Mixins
+// --------------------------------------------------
+@mixin x1-icon-stack($size) {
+	@include square($size);
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	line-height: $size;
+	font-size: $size;
+}

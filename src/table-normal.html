@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Normal Table Demo</title>
+		<link rel="stylesheet" href="./css/ng-table.css">
+	</head>
+<body>
+	<script src="./js/ng-table.js"></script>
+	<div ng-app="ngRouteExample" style="width:80%">
+		<div ng-controller="ngTableNormal">
+			<x1-grid id="{{idMap.id1}}" data="gridData" options="gridOptions" resize-events="gridEvents"></x1-grid>
+			<p><em>Cell click events:</em> {{demoEvents.demoClickEvent}}</p>
+			<p><em>Column sort events:</em> {{demoEvents.demoSortEvent}}</p>
+		</div>
+	</div>	
+</body>
+</html>

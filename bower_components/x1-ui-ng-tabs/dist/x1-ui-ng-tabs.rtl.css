@@ -1,0 +1,92 @@
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+
+/**
+ *
+ * Licensed Materials - Property of IBM
+ *
+ * tabs.variables.scss
+ *
+ * (C) Copyright IBM Corporation 2015.
+ * U.S. Government Users Restricted Rights:  Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ *
+ */
+/**
+ * @todo deprecate these eventuallyyyyyy
+ */
+/*
+ * end
+ **/
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.closable .close-pane, [dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-hidden .tabs-dropdown .tabs-dropdown-item.closable .close-pane {
+  left: 10px;
+  right: auto; }
+
+[dir="rtl"] .x1-ui-tabs-content.tab-content {
+  margin-left: 0;
+  margin-right: -1px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.with-info .info-popover-button {
+  left: auto;
+  right: 10px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.with-info > h3 a {
+  padding-left: 0;
+  padding-right: 34px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.edit-mode .edit-pane button {
+  right: auto;
+  left: 10px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.closable.with-info > h3 a {
+  padding-left: 0;
+  padding-right: 34px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-tab.closable > h3 a {
+  padding: 0 10px 0 40px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-add {
+  padding: 0 20px 0 40px; }
+
+[dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-hidden {
+  float: none; }
+  [dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-hidden .tabs-dropdown {
+    right: auto;
+    left: 0; }
+    [dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-hidden .tabs-dropdown.left-align {
+      left: auto;
+      right: -1px; }
+    [dir="rtl"] .x1-ui-tabs-list.nav-tabs .x1-ui-tabs-hidden .tabs-dropdown .tabs-dropdown-item.closable > h3 a {
+      padding-right: 0;
+      padding-left: 40px; }
+
+[dir="rtl"] .popover.tabs-info-popover .close-icon {
+  right: auto;
+  left: 20px; }
+
+[dir="rtl"] .popover.tabs-info-popover article.info-popover p span.title {
+  margin-right: 0;
+  margin-left: 10px; }
+
+[dir="rtl"] .popover.tabs-info-popover article.info-popover p span.name {
+  margin-left: 0;
+  margin-right: 52px; }
+
+[dir="rtl"] .popover.tabs-info-popover article.info-popover p span.description {
+  margin-left: 0;
+  margin-right: 85px; }

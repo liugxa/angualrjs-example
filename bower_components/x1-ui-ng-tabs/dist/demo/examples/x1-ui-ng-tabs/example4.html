@@ -1,0 +1,7 @@
+<div ng-app="demo4" ng-controller="demo4Ctrl">
+    <x1-tabset tabs-position="top" resizable="true" adding="true" closing="true" editable="true" new-content="br">
+        <x1-tab ng-repeat="tab in numTabs" heading="'Tab ' + tab" selected="tab===1">
+            <p>See tab {{tab}} content</p>
+        </x1-tab>
+    </x1-tabset>
+</div>

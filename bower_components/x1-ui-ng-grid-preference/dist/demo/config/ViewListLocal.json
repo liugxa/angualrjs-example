@@ -1,0 +1,33 @@
+[
+	{
+		"id": 1.1,
+		"name": "Company View 1",
+		"companyView": true,
+		"selected": false
+	}, {
+		"id": 2.2,
+		"name": "Company View 2",
+		"companyView": true,
+		"selected": false
+	}, {
+		"id": 3.3,
+		"name": "Custom View 1",
+		"companyView": false,
+		"selected": false
+	}, {
+		"id": 4.4,
+		"name": "Custom View 2",
+		"companyView": false,
+		"selected": false
+	}, {
+		"id": 5.5,
+		"name": "Custom View 3",
+		"companyView": false,
+		"selected": false
+	}, {
+		"id": 6.6,
+		"name": "Music Grid",
+		"companyView": false,
+		"selected": false
+	}
+]

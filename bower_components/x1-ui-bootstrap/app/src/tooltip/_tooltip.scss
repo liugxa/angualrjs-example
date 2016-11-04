@@ -1,0 +1,98 @@
+//
+// Tooltips
+// --------------------------------------------------
+
+// Base class
+.tooltip {
+	@include box-shadow($default-box-shadow);
+	background-color: $tooltip-bg;
+	line-height: 15px;
+
+	&.top {
+		border-top: $tooltip-border-width solid $tooltip-border-color;
+		margin-top: -5px;
+		padding: 0;
+
+		.tooltip-arrow {
+			bottom: -$tooltip-arrow-width;
+
+			&:after {
+				border-top-color: $tooltip-arrow-border-color;
+				margin-top: -$tooltip-arrow-width;
+				margin-left: -$tooltip-arrow-width;
+				border-bottom-width: 0;
+			}
+		}
+	}
+	&.right {
+		border-right: $tooltip-border-width solid $tooltip-border-color;
+		margin-left: 5px;
+		padding: 0;
+
+		.tooltip-arrow {
+			left: -$tooltip-arrow-width;
+
+			&:after {
+				border-right-color: $tooltip-arrow-border-color;
+				margin-top: -$tooltip-arrow-width;
+				border-left-width: 0;
+			}
+		}
+		.tooltip-inner {
+			min-width: $tooltip-min-width - $tooltip-border-width;
+		}
+	}
+	&.bottom {
+		border-bottom: $tooltip-border-width solid $tooltip-border-color;
+		margin-top: 5px;
+		padding: 0;
+
+		.tooltip-arrow {
+			top: -$tooltip-arrow-width;
+
+			&:after {
+				border-bottom-color: $tooltip-arrow-border-color;
+				margin-left: -$tooltip-arrow-width;
+				border-top-width: 0;
+			}
+		}
+	}
+	&.left {
+		border-left: $tooltip-border-width solid $tooltip-border-color;
+		margin-left: -5px;
+		padding: 0;
+
+		.tooltip-arrow {
+			right: -$tooltip-arrow-width;
+
+			&:after {
+				border-left-color: $tooltip-arrow-border-color;
+				margin-top: -$tooltip-arrow-width;
+				margin-left: -$tooltip-arrow-width;
+				border-right-width: 0;
+			}
+		}
+		.tooltip-inner {
+			min-width: $tooltip-min-width - $tooltip-border-width;
+		}
+	}
+}
+
+// Wrapper for the tooltip content
+.tooltip-inner {
+	min-width: $tooltip-min-width;
+	padding: 10px 15px;
+	text-align: left;
+}
+
+// Arrows
+.tooltip-arrow {
+	&:after {
+		content: "";
+		position: absolute;
+		border-color: transparent;
+		border-style: solid;
+		border-width: $tooltip-arrow-width;
+		z-index: -1;
+	}
+}

@@ -1,0 +1,28 @@
+//
+// Jumbotron
+// --------------------------------------------------
+
+
+.jumbotron {
+	padding: $jumbotron-padding;
+	margin-bottom: 0;
+
+	h2,
+	.h2 {
+		color: $jumbotron-heading-color;
+		margin: 0;
+	}
+	p {
+		margin: 18px 0 0;
+	}
+
+	@media screen and (min-width: $screen-sm-min) {
+		padding: $jumbotron-padding;
+
+		.container &,
+		.container-fluid & {
+			padding-left:  $jumbotron-padding;
+			padding-right: $jumbotron-padding;
+		}
+	}
+}

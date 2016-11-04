@@ -1,0 +1,46 @@
+{
+  "name": "x1-ui-bootstrap",
+  "description": "IBM Commerce UI Bootstrap",
+  "version": "3.6.1",
+  "main": [
+    "dist/x1-ui-bootstrap.css",
+    "dist/app/src/bootstrap/bootstrap.js"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    ".gitignore",
+    ".jshintrc",
+    ".editorconfig",
+    "package.json",
+    "csslintrc.json",
+    "gulpfile.js",
+    "karma.conf.js",
+    "protractor.conf.js",
+    "sonar-project.properties"
+  ],
+  "authors": [
+    "IBM"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://gitlabhost.rtp.raleigh.ibm.com/commerce-ui/x1-ui-bootstrap.git"
+  },
+  "dependencies": {
+    "jquery": "~2.1.3"
+  },
+  "devDependencies": {
+    "angular": "~1.3.15",
+    "angular-animate": "~1.3.0",
+    "angular-bootstrap": "~0.12.1",
+    "angular-ui-router": "~0.2.13",
+    "x1-ui-ng-prism": "^2.x"
+  },
+  "resolutions": {
+    "angular": "~1.3.15",
+    "angular-animate": "~1.3.0",
+    "prism": "^1.5.1"
+  },
+  "private": true
+}

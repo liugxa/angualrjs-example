@@ -1,0 +1,94 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Container that the modal scrolls within
+.modal {
+	// When fading in the modal, DISABLE slide down animation
+	&.fade .modal-dialog {
+		@include translate(-50%, calc(-50% - 20px));
+	}
+	&.in .modal-dialog {
+		@include translate(-50%, -50%);
+	}
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+}
+
+// Actual modal
+.modal-content {
+	@include box-shadow($default-box-shadow);
+	background-color: $modal-content-bg;
+	background-clip: padding-box;
+	border: none;
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+	background-color: $modal-header-bg;
+	padding: $modal-title-padding;
+	height: $modal-title-line-height;
+	min-height: initial;
+	border: none;
+}
+
+// Title text within header
+.modal-title {
+	line-height: $modal-title-line-height;
+	font-size: $font-size-h4;
+	display: inline-block;
+	font-weight: bold;
+	color: $modal-title-color;
+}
+
+// Close icon
+.modal-header .close {
+	line-height: $modal-title-line-height;
+	margin: 0;
+
+	&:hover .glyphicon,
+	&:focus .glyphicon {
+		border-color: $modal-title-color;
+	}
+	.glyphicon {
+		color: $modal-title-color;
+	}
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+	position: relative;
+	padding: $modal-inner-padding;
+}
+
+// Footer (for actions)
+.modal-footer {
+	padding: $modal-footer-padding;
+	border: none;
+}
+
+// Scale up the modal
+@media (min-width: $screen-sm-min) {
+	// Automatically set modal's width for larger viewports
+	.modal-dialog {
+		margin: 0 auto;
+	}
+	.modal-content {
+		@include box-shadow($default-box-shadow);
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.modal-xl,
+	.xl .modal-dialog {
+		width: $modal-xl;
+	}
+}

@@ -1,0 +1,37 @@
+//
+// Popovers
+// --------------------------------------------------
+
+.popover {
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	@include box-shadow($default-box-shadow);
+}
+
+.popover-title {
+	padding: 0 53px 0 20px;
+	line-height: $popover-title-height;
+	font-size: $font-size-h4;
+	color: $popover-title-color;
+	border-bottom: none;
+	border-radius: 0;
+}
+
+.popover-content {
+	padding: 30px 20px;
+	max-height: 210px;
+	overflow-y: auto;
+}
+
+// Arrows
+//
+// .arrow is outer, .arrow:after is inner
+
+.popover {
+	&.bottom > .arrow {
+		&:after {
+			border-bottom-color: $popover-title-bg;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+.alert {
+	@include text-overflow();
+	color: $alert-font-color;
+	line-height: $alert-height - 2; //subtract border
+	height: $alert-height;
+
+	&:before {
+		@extend .glyphicon;
+		margin: $alert-icon-margin;
+		font-size: 30px;
+		float: left;
+	}
+}
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible {
+	// Adjust close link position
+	.close {
+		margin: $alert-close-margin;
+		height: $alert-height;
+		line-height: $alert-height - 2; //subtract border
+		top: 0;
+		right: 0;
+
+		&:before {
+			@extend .glyphicon;
+			@extend .glyphicon-xs;
+			content: $glyphicon-remove;
+			border: 1px solid transparent;
+			color: $gray80;
+			padding: 3px;
+		}
+		> span {
+			display: none;
+		}
+	}
+}
+
+.alert-success {
+	&:before {
+		content: $glyphicon-ok-circle;
+		color: $alert-success-icon;
+	}
+}
+
+.alert-info {
+	&:before {
+		content: $glyphicon-info-circle;
+		color: $alert-info-icon;
+	}
+}
+
+.alert-warning {
+	&:before {
+		content: $glyphicon-error-circle;
+		color: $alert-warning-icon;
+	}
+}
+
+.alert-danger {
+	&:before {
+		content: $glyphicon-warning-sign;
+		color: $alert-danger-icon;
+	}
+}

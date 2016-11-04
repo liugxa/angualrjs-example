@@ -1,0 +1,72 @@
+@mixin btn-variant($color, $hover-color, $background, $border, $disable: true) {
+	background-color: $background;
+	border-color: $border;
+	color: $color;
+
+	&:hover,
+	&:focus,
+	&.focus,
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-color: $border;
+		border-color: transparent;
+		color: $hover-color;
+
+		.glyphicon {
+			color: $hover-color;
+		}
+	}
+	&.dropdown-toggle {
+		&:hover,
+		&:focus,
+		&.focus,
+		&:active,
+		&.active {
+			border-color: $border;
+		}
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-image: none;
+	}
+	.badge {
+		background-color: transparent;
+		color: $color;
+	}
+	.glyphicon {
+		color: $color;
+	}
+	@if ($background == $btn-primary-bg) {
+		+ .dropdown-toggle {
+			border-left-color: $color;
+		}
+	}
+}
+@mixin com-button-size($padding, $font-size, $line-height) {
+	padding: $padding;
+	font-size: $font-size;
+	line-height: $line-height - ($btn-border-width * 2);
+	height: $line-height;
+	border-radius: $border-radius-base;
+
+	&.btn-glyphicon {
+		padding-left: 10px;
+
+		.glyphicon {
+			font-size: $font-size;
+		}
+	}
+
+	// Single & Split button dropdowns
+	&[dropdown-toggle] {
+		line-height: $line-height - 2;
+
+		+ .dropdown-menu > li > a,
+		+ .dropdown-menu > li > h3 > a {
+			line-height: $line-height;
+			font-size: $font-size;
+		}
+	}
+}
